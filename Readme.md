@@ -307,21 +307,18 @@ The following services, classes were added to the system in order to build up IN
 In CCN-Lite, the major change was to manage the control interests. This was done in the ccnl_fwd_handleInterest and ccnl_fwd_handleContent methods of ccnl-core-fwd.c code file.
 Here, instead of saving the interest data in the content store, we skipped this process to reduce content store overload from control messages.
 
-    /home/veno/MA-Ali/ccn-lite/src/ccnl-core-fwd.c
+    /ccn-lite/src/ccnl-core-fwd.c
 
-## Services and Plots
+## Services 
 The services that were created for the system are:
 
 * Starting Nodes: StartNode.sh shell service (on each node)
 * Starting Compute Server: StartCS.sh shell service (on each node)
 * Query Service: queryService.sh shell service (on each node) to manage the query store
 
-    /MA-Ali/VM-Startup-Scripts/VM28/queryService.sh
+    /VM-Startup-Scripts/VM28/queryService.sh
 
 * Update Node State: updateNodeState_NodeID.sh (on each node) shell service to gather network data from iPerf and ping tools as well as node battery status to update the nodes network state on its local Compute Server.
 
-    /MA-Ali/VM-Startup-Scripts/VM28/updateNodeState_9001.sh
+    /VM-Startup-Scripts/VM28/updateNodeState_9001.sh
 
-* Plots: Evaluation plots for the system created in Python using matplotlib.
-
-    /MA-Ali/plots/Thesis
