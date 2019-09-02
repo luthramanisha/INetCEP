@@ -1,0 +1,103 @@
+0: get content:
+$CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9998 -w 10 "/ndn/test/stream" | $CCNL_HOME/bin/ccn-lite-pktdump
+
+1: add 1 2 in network
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 "add 1 2" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+2: use word count service (from compute server) on foo bar
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 \
+  "call 2 /node/nodeA/nfn_service_WordCount 'foo bar'" | $CCNL_HOME/bin/ccn-lite-pktdump 
+with -f 2 or -f 3
+or
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 2 /node/nodeA/nfn_service_WordCount 'foo bar'" | $CCNL_HOME/bin/ccn-lite-pktdump
+
+
+3:You can also count the number of words of the document /ndn/test/mycontent that you produced in the 3rd step:
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 2 /node/nodeA/nfn_service_WordCount /ndn/test/mycontent" | $CCNL_HOME/bin/ccn-lite-pktdump
+
+or /ndn/test/stream:
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.01/9001 -w 10 "call 2 /node/nodeA/nfn_service_WordCount /ndn/test/stream" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+4:Below are more examples that include counting tiny_md and combine WordCount with add:
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 2 /node/nodeA/nfn_service_WordCount /node/nodeA/docs/tiny_md" | $CCNL_HOME/bin/ccn-lite-pktdump
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 3 /node/nodeA/nfn_service_WordCount 'foo bar' /node/nodeA/docs/tiny_md" | $CCNL_HOME/bin/ccn-lite-pktdump
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "add (call 2 /node/nodeA/nfn_service_WordCount 'foo bar') 40" | $CCNL_HOME/bin/ccn-lite-pktdump
+
+5:Functional chaining:
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 \
+  "call 2 /node/nodeA/nfn_service_WordCount (call 4 /node/nodeA/nfn_service_Pandoc \
+  /node/nodeA/docs/tutorial_md 'markdown_github' 'html')" | $CCNL_HOME/bin/ccn-lite-pktdump
+
+6. Filter:
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 4 /node/nodeA/nfn_service_Filter 'sensor' 'victims' '3=F&&4>10'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 4 /node/nodeA/nfn_service_Filter 'sensor' 'victims' '3=M&4>45'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 4 /node/nodeA/nfn_service_Filter 'sensor' 'victims' '3=M|4>45'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+7: Filter and Window Chained:
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 4 /node/nodeA/nfn_service_Filter 'data' (call 4 /node/nodeA/nfn_service_Window 'victims' '22:18:37.800' '22:19:00.000') '3=M'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 4 /node/nodeA/nfn_service_Filter 'data' (call 4 /node/nodeA/nfn_service_Window 'victims' '22:18:39.800' '22:19:00.000') '3=M'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+29.01.2018:
+--Filter(Window) chained: Ready for placement:
+---Filter returns named data:
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 5 /node/nodeA/nfn_service_Filter 'name' (call 4 /node/nodeA/nfn_service_Window 'victims' '22:18:36.800' '22:18:44.000') '3=F&4>10' 'data'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+---Filter returns named interest:
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 5 /node/nodeA/nfn_service_Filter 'name' (call 4 /node/nodeA/nfn_service_Window 'victims' '22:18:36.800' '22:18:44.000') '3=F&4>10' 'name'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+--Join(Window) chained: Ready for placement:
+---Join returns data directly:
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 5 /node/nodeA/nfn_service_Join 'name' '/Vj6OjyI6/Filter/onWindow/211553' '/OPFrfS1U/Filter/onWindow/211557' 'NULL'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+
+8: Execute Remote Query:
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 5 /node/nodeA/nfn_service_ExecuteQuery '4' 'nodeA' 'Window' 'victims 22:18:40.800 22:19:00.000'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+9: Query Processor:
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 5 /node/nodeA/nfn_service_Query 'Client1' 'call 4 /node/nodeQuery/nfn_service_Filter [data] [(call 4 /node/nodeQuery/nfn_service_Window [victims] [22:18:38.700] [22:18:38.900])] [3=M]' 'Region1' '10:10:10.100'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+
+Complex Query 1:
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 5 /node/nodeA/nfn_service_Query 'Client1' '
+-- [1call 5 /node/nodeA/nfn_service_Join 
+	:name:
+	:[2call 5 /node/nodeA/nfn_service_Filter 'content' (call 4 /node/nodeQuery/nfn_service_Window 'victims' '22:18:36.800' '22:18:44.000') '3=F&4>10' 'name'2]:
+	:[3call 5 /node/nodeA/service_nfn_Filter 'content' (call 4 /node/nodeQuery/nfn_service_Window 'survivors' '22:18:36.800' '22:18:44.000') '3=F&4>10' 'name'3]:
+	:NULL:
+   1]
+--FILTER(WINDOW(Victims, T1, T2), Options)
+' 'Region1' '10:10:10.100'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 5 /node/nodeA/nfn_service_Query 'Client1' '[1call 5 /node/nodeQuery/nfn_service_Join[p_name[p_[2call 5 /node/nodeQuery/nfn_service_Filter content (call 4 /node/nodeQuery/nfn_service_Window victims 22:18:36.800 22:18:44.000) 3=F&4>10 name2][p_[3call 5 /node/nodeQuery/service_nfn_Filter content (call 4 /node/nodeQuery/nfn_service_Window survivors 22:18:36.800 22:18:44.000) 3=F&4>10 name3][p_NULL1]' 'Region1' '10:10:10.100'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+
+[1call 5 /node/nodeQuery/nfn_service_Join[p_name[p_[2call 5 /node/nodeQuery/nfn_service_Filter content (call 4 /node/nodeQuery/nfn_service_Window victims 22:18:36.800 22:18:44.000) 3=F&4>10 name2][p_[3call 5 /node/nodeQuery/service_nfn_Filter content (call 4 /node/nodeQuery/nfn_service_Window survivors 22:18:36.800 22:18:44.000) 3=F&4>10 name3][p_NULL1]
+
+Current Test Query:
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 6 /node/nodeA/nfn_service_Query '9001' 'Client1' 'JOIN([name],[FILTER(name,WINDOW(victims,22:18:36.800,22:18:44.000),3=F&4>10,name)],[FILTER(name,WINDOW(survivors,22:18:35.800,22:18:41.000),3=F&4>10,name)],[NULL])' 'Region1' '10:10:11.111'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+
+--2.9.18: For new CCN:
+$CCNL_HOME/build/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 6 /node/nodeA/nfn_service_SACEPICN_Query 'nodeA' 'Client1' 'JOIN([name],[FILTER(name,WINDOW(victims,22:18:36.800,22:18:44.000),3=F&4>10,name)],[FILTER(name,WINDOW(survivors,22:18:35.800,22:18:41.000),3=F&4>10,name)],[NULL])' 'Region1' '10:10:11.110'" | $CCNL_HOME/build/bin/ccn-lite-pktdump -f 3
+
+
+--2.12.18: Update on query: This executes join as data. Next we need to resolve the two names for join and join will do the merge.
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 30 "call 6 /node/nodeA/nfn_service_Query '9001' 'Client1' 'JOIN([data],[FILTER(name,WINDOW(victims,22:18:36.800,22:18:44.000),3=F&4>10,name)],[FILTER(name,WINDOW(survivors,22:18:34.800,22:18:41.000),3=F&4>10,name)],[NULL])' 'Region1' '10:10:11.110'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+
+--2.17.18: VM Query: This executes join as name.
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 10.2.1.28/9001 -w 30 "call 6 /node/nodeA/nfn_service_QueryCentralRemNS '9001' 'Client1' 'JOIN([name],[FILTER(name,WINDOW(victims,22:18:36.800,22:18:44.000),3=F&4>10,name)],[FILTER(name,WINDOW(survivors,22:18:34.800,22:18:41.000),3=F&4>10,name)],[NULL])' 'Region1' '10:10:11.110'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+

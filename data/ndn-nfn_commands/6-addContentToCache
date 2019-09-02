@@ -1,0 +1,7 @@
+$CCNL_HOME/bin/ccn-lite-relay -v trace -u 9001 -x /tmp/mgmt-nfn-relay-a.sock -s ccnx2015
+
+$CCNL_HOME/bin/ccn-lite-mkC -s ccnx2015 -i /home/veno/Thesis/ccn-lite/test/ali_tlv/testdata/data1 -o /home/veno/Thesis/ccn-lite/test/ali_tlv/nodeB/test1.ccntlv "/test/data/number1"
+
+$CCNL_HOME/bin/ccn-lite-ctrl -x /tmp/mgmt-nfn-relay-a.sock addContentToCache /home/veno/Thesis/ccn-lite/test/ali_tlv/nodeB/test1.ccntlv
+
+$CCNL_HOME/bin/ccn-lite-peek -s ccnx2015 -u 127.0.0.1/9001 "/test/data/number1" | $CCNL_HOME/bin/ccn-lite-pktdump -f 2

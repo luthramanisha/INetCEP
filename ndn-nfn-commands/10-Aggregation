@@ -1,0 +1,35 @@
+1) case Seq(deliveryFormat: NFNStringValue, sensor: NFNStringValue, numberOfEvents: NFNIntValue, aggregateOperator: NFNStringValue, column: NFNIntValue) => aggregateEventData(deliveryFormat, sensor, numberOfEvents, aggregateOperator, column)
+
+Query: 
+$CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9001 -w 10 "" "call 6 /node/nodeA/nfn_service_Aggregation 'data' 'victims' 5 'SUM' 4 /NFN" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+$CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9001 -w 10 "" "call 6 /node/nodeA/nfn_service_Aggregation 'data' 'victims' 6 'MIN' 4 /NFN" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+$CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9001 -w 10 "" "call 6 /node/nodeA/nfn_service_Aggregation 'data' 'victims' 6 'MAX' 4 /NFN" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+$CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9001 -w 10 "" "call 6 /node/nodeA/nfn_service_Aggregation 'data' 'victims' 4 'COUNT' 4 /NFN" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+$CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9001 -w 10 "" "call 6 /node/nodeA/nfn_service_Aggregation 'data' 'victims' 5 'AVERAGE' 4 /NFN" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+Output:
+veno@veno-VirtualBox:~$ $CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9001 -w 10 "" "call 6 /node/nodeA/nfn_service_Aggregation 'data' 'victims' 5 'SUM' 4 /NFN" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+129
+veno@veno-VirtualBox:~$ $CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9001 -w 10 "" "call 6 /node/nodeA/nfn_service_Aggregation 'data' 'victims' 6 'MIN' 4 /NFN" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+6
+veno@veno-VirtualBox:~$ $CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9001 -w 10 "" "call 6 /node/nodeA/nfn_service_Aggregation 'data' 'victims' 6 'MAX' 4 /NFN" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+50
+veno@veno-VirtualBox:~$ $CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9001 -w 10 "" "call 6 /node/nodeA/nfn_service_Aggregation 'data' 'victims' 4 'COUNT' 4 /NFN" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+4
+veno@veno-VirtualBox:~$ $CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9001 -w 10 "" "call 6 /node/nodeA/nfn_service_Aggregation 'data' 'victims' 5 'AVERAGE' 4 /NFN" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+25.8
+
+Sample sensor:
+victims
+15:41:00.001/1001/M/50
+15:42:00.001/1002/F/40
+15:43:00.001/1004/M/8
+15:44:00.001/1005/F/6
+15:45:00.001/1006/M/25
+15:46:00.001/1003/F/22
+22:18:38.841/1001/M/50
+22:18:39.841/1002/F/40
+22:18:40.841/1003/F/22
+22:18:41.841/1004/M/8
+22:18:42.841/1005/F/6
+22:18:43.841/1006/M/25

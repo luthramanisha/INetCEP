@@ -1,0 +1,15 @@
+Relay:
+
+$CCNL_HOME/bin/ccn-nfn-relay -v trace -u 9001 -x /tmp/mgmt-nfn-relay-a.sock
+
+CS:
+java -jar /home/veno/Thesis/nfn-scala/target/scala-2.10/nfn-assembly-0.2.0.jar --mgmtsocket /tmp/mgmt-nfn-relay-a.sock --ccnl-port 9001 --cs-port 9002 --debug --ccnl-already-running /node/nodeA
+
+Calls:
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 3 /node/nodeA/nfn_service_Join 1 2" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 4 /node/nodeA/nfn_service_Join 'sensor1' 'sensor2' 'val>80'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 4 /node/nodeA/nfn_service_Window 'sensor1' '22:18:38.841' '22:18:45.841'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+

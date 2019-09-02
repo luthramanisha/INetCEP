@@ -1,0 +1,16 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.associations": {
+        "ccnl-uapi.h": "c",
+        "ccnl-ext-nfn.h": "c",
+        "asn1.h": "c",
+        "evp.h": "c",
+        "un.h": "c",
+        "unistd.h": "c",
+        "ccnl-core.h": "c",
+        "ccninet.h": "c",
+        "if_link.h": "c",
+        "stdlib.h": "c"
+    },
+    "git.ignoreLimitWarning": true
+}

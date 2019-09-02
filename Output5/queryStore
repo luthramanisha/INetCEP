@@ -1,0 +1,1 @@
+QID:Client1_72 Centralized 1 Source Client1 JOIN(name,name,PREDICT2(name,name,30s,WINDOW(name,plug0,16:22:00.000,16:23:00.000)),PREDICT2(name,name,30s,WINDOW(name,plug1,16:22:00.000,16:23:00.000))) Region1 12:06:58.200

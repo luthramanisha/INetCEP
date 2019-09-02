@@ -1,0 +1,124 @@
+<rspec xmlns="http://www.geni.net/resources/rspec/3" xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" xmlns:tour="http://www.protogeni.net/resources/rspec/ext/apt-tour/1" xmlns:jacks="http://www.protogeni.net/resources/rspec/ext/jacks/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geni.net/resources/rspec/3    http://www.geni.net/resources/rspec/3/request.xsd" type="request">
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-0" component_id="urn:publicid:IDN+instageni.utdallas.edu+node+pc2" component_manager_id="urn:publicid:IDN+instageni.utdallas.edu+authority+cm" sliver_id="urn:publicid:IDN+instageni.utdallas.edu+sliver+39451" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/Xen-VM.svg"/>
+    <routable_control_ip xmlns="http://www.protogeni.net/resources/rspec/ext/emulab/1"/>
+    <sliver_type name="emulab-xen">
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU16-64-STD"/>
+      <emulab:xen cores="1" disk="15" ram="16384"/>
+    </sliver_type>
+    <services>
+      <login authentication="ssh-keys" hostname="pcvm2-7.instageni.utdallas.edu" port="22" username="amrrizk"/>
+      <login authentication="ssh-keys" hostname="pcvm2-7.instageni.utdallas.edu" port="22" username="mzink"/>
+      <login authentication="ssh-keys" hostname="pcvm2-7.instageni.utdallas.edu" port="22" username="manishal"/>
+      <login authentication="ssh-keys" hostname="pcvm2-7.instageni.utdallas.edu" port="22" username="bloecher"/>
+      <emulab:console server="pcvm2-7.instageni.utdallas.edu"/>
+    </services>
+    <emulab:vnode name="pcvm2-7" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU16-64-STD:0"/>
+    <host name="node-0.CEP-NDN.ch-geni-net.instageni.utdallas.edu" ipv4="129.110.253.38"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-1" component_id="urn:publicid:IDN+instageni.utdallas.edu+node+pc3" component_manager_id="urn:publicid:IDN+instageni.utdallas.edu+authority+cm" sliver_id="urn:publicid:IDN+instageni.utdallas.edu+sliver+39450" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/Xen-VM.svg"/>
+    <routable_control_ip xmlns="http://www.protogeni.net/resources/rspec/ext/emulab/1"/>
+    <sliver_type name="emulab-xen">
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU16-64-STD"/>
+      <emulab:xen cores="1" disk="15" ram="4096"/>
+    </sliver_type>
+    <services>
+      <login authentication="ssh-keys" hostname="pcvm3-1.instageni.utdallas.edu" port="22" username="amrrizk"/>
+      <login authentication="ssh-keys" hostname="pcvm3-1.instageni.utdallas.edu" port="22" username="mzink"/>
+      <login authentication="ssh-keys" hostname="pcvm3-1.instageni.utdallas.edu" port="22" username="manishal"/>
+      <login authentication="ssh-keys" hostname="pcvm3-1.instageni.utdallas.edu" port="22" username="bloecher"/>
+      <emulab:console server="pcvm3-1.instageni.utdallas.edu"/>
+    </services>
+    <emulab:vnode name="pcvm3-1" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU16-64-STD:0"/>
+    <host name="node-1.CEP-NDN.ch-geni-net.instageni.utdallas.edu" ipv4="129.110.253.40"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-2" component_id="urn:publicid:IDN+instageni.utdallas.edu+node+pc1" component_manager_id="urn:publicid:IDN+instageni.utdallas.edu+authority+cm" sliver_id="urn:publicid:IDN+instageni.utdallas.edu+sliver+39446" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/Xen-VM.svg"/>
+    <routable_control_ip xmlns="http://www.protogeni.net/resources/rspec/ext/emulab/1"/>
+    <sliver_type name="emulab-xen">
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU16-64-STD"/>
+      <emulab:xen cores="1" disk="15" ram="4096"/>
+    </sliver_type>
+    <services>
+      <login authentication="ssh-keys" hostname="pcvm1-9.instageni.utdallas.edu" port="22" username="amrrizk"/>
+      <login authentication="ssh-keys" hostname="pcvm1-9.instageni.utdallas.edu" port="22" username="mzink"/>
+      <login authentication="ssh-keys" hostname="pcvm1-9.instageni.utdallas.edu" port="22" username="manishal"/>
+      <login authentication="ssh-keys" hostname="pcvm1-9.instageni.utdallas.edu" port="22" username="bloecher"/>
+      <emulab:console server="pcvm1-9.instageni.utdallas.edu"/>
+    </services>
+    <emulab:vnode name="pcvm1-9" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU16-64-STD:0"/>
+    <host name="node-2.CEP-NDN.ch-geni-net.instageni.utdallas.edu" ipv4="129.110.253.34"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-3" component_id="urn:publicid:IDN+instageni.utdallas.edu+node+pc1" component_manager_id="urn:publicid:IDN+instageni.utdallas.edu+authority+cm" sliver_id="urn:publicid:IDN+instageni.utdallas.edu+sliver+39447" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/Xen-VM.svg"/>
+    <routable_control_ip xmlns="http://www.protogeni.net/resources/rspec/ext/emulab/1"/>
+    <sliver_type name="emulab-xen">
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU16-64-STD"/>
+      <emulab:xen cores="1" disk="15" ram="4096"/>
+    </sliver_type>
+    <services>
+      <login authentication="ssh-keys" hostname="pcvm1-10.instageni.utdallas.edu" port="22" username="amrrizk"/>
+      <login authentication="ssh-keys" hostname="pcvm1-10.instageni.utdallas.edu" port="22" username="mzink"/>
+      <login authentication="ssh-keys" hostname="pcvm1-10.instageni.utdallas.edu" port="22" username="manishal"/>
+      <login authentication="ssh-keys" hostname="pcvm1-10.instageni.utdallas.edu" port="22" username="bloecher"/>
+      <emulab:console server="pcvm1-10.instageni.utdallas.edu"/>
+    </services>
+    <emulab:vnode name="pcvm1-10" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU16-64-STD:0"/>
+    <host name="node-3.CEP-NDN.ch-geni-net.instageni.utdallas.edu" ipv4="129.110.253.35"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-4" component_id="urn:publicid:IDN+instageni.utdallas.edu+node+pc2" component_manager_id="urn:publicid:IDN+instageni.utdallas.edu+authority+cm" sliver_id="urn:publicid:IDN+instageni.utdallas.edu+sliver+39452" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/Xen-VM.svg"/>
+    <routable_control_ip xmlns="http://www.protogeni.net/resources/rspec/ext/emulab/1"/>
+    <sliver_type name="emulab-xen">
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU16-64-STD"/>
+      <emulab:xen cores="1" disk="15" ram="4096"/>
+    </sliver_type>
+    <services>
+      <login authentication="ssh-keys" hostname="pcvm2-8.instageni.utdallas.edu" port="22" username="amrrizk"/>
+      <login authentication="ssh-keys" hostname="pcvm2-8.instageni.utdallas.edu" port="22" username="mzink"/>
+      <login authentication="ssh-keys" hostname="pcvm2-8.instageni.utdallas.edu" port="22" username="manishal"/>
+      <login authentication="ssh-keys" hostname="pcvm2-8.instageni.utdallas.edu" port="22" username="bloecher"/>
+      <emulab:console server="pcvm2-8.instageni.utdallas.edu"/>
+    </services>
+    <emulab:vnode name="pcvm2-8" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU16-64-STD:0"/>
+    <host name="node-4.CEP-NDN.ch-geni-net.instageni.utdallas.edu" ipv4="129.110.253.39"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-5" component_id="urn:publicid:IDN+instageni.utdallas.edu+node+pc1" component_manager_id="urn:publicid:IDN+instageni.utdallas.edu+authority+cm" sliver_id="urn:publicid:IDN+instageni.utdallas.edu+sliver+39448" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/Xen-VM.svg"/>
+    <routable_control_ip xmlns="http://www.protogeni.net/resources/rspec/ext/emulab/1"/>
+    <sliver_type name="emulab-xen">
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU16-64-STD"/>
+      <emulab:xen cores="1" disk="15" ram="4096"/>
+    </sliver_type>
+    <services>
+      <login authentication="ssh-keys" hostname="pcvm1-12.instageni.utdallas.edu" port="22" username="amrrizk"/>
+      <login authentication="ssh-keys" hostname="pcvm1-12.instageni.utdallas.edu" port="22" username="mzink"/>
+      <login authentication="ssh-keys" hostname="pcvm1-12.instageni.utdallas.edu" port="22" username="manishal"/>
+      <login authentication="ssh-keys" hostname="pcvm1-12.instageni.utdallas.edu" port="22" username="bloecher"/>
+      <emulab:console server="pcvm1-12.instageni.utdallas.edu"/>
+    </services>
+    <emulab:vnode name="pcvm1-12" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU16-64-STD:0"/>
+    <host name="node-5.CEP-NDN.ch-geni-net.instageni.utdallas.edu" ipv4="129.110.253.36"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-6" component_id="urn:publicid:IDN+instageni.utdallas.edu+node+pc1" component_manager_id="urn:publicid:IDN+instageni.utdallas.edu+authority+cm" sliver_id="urn:publicid:IDN+instageni.utdallas.edu+sliver+39449" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/Xen-VM.svg"/>
+    <routable_control_ip xmlns="http://www.protogeni.net/resources/rspec/ext/emulab/1"/>
+    <sliver_type name="emulab-xen">
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU16-64-STD"/>
+      <emulab:xen cores="1" disk="15" ram="4096"/>
+    </sliver_type>
+    <services>
+      <login authentication="ssh-keys" hostname="pcvm1-14.instageni.utdallas.edu" port="22" username="amrrizk"/>
+      <login authentication="ssh-keys" hostname="pcvm1-14.instageni.utdallas.edu" port="22" username="mzink"/>
+      <login authentication="ssh-keys" hostname="pcvm1-14.instageni.utdallas.edu" port="22" username="manishal"/>
+      <login authentication="ssh-keys" hostname="pcvm1-14.instageni.utdallas.edu" port="22" username="bloecher"/>
+      <emulab:console server="pcvm1-14.instageni.utdallas.edu"/>
+    </services>
+    <emulab:vnode name="pcvm1-14" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU16-64-STD:0"/>
+    <host name="node-6.CEP-NDN.ch-geni-net.instageni.utdallas.edu" ipv4="129.110.253.37"/>
+  </node>
+  <rs:site_info xmlns:rs="http://www.protogeni.net/resources/rspec/ext/site-info/1">
+    <rs:location country="US" latitude="32.99473" longitude="-96.75258"/>
+  </rs:site_info>
+</rspec>

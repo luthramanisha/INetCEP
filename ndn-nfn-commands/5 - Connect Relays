@@ -1,0 +1,13 @@
+B (9002) --> A (9001): same for C --> B
+
+FACEID=`$CCNL_HOME/bin/ccn-lite-ctrl -x /tmp/mgmt-nfn-relay-b.sock newUDPface any 127.0.0.1 9001 | $CCNL_HOME/bin/ccn-lite-ccnb2xml | grep FACEID | sed -e 's/^[^0-9]*\([0-9]\+\).*/\1/'`
+
+$CCNL_HOME/bin/ccn-lite-ctrl -x /tmp/mgmt-nfn-relay-b.sock prefixreg /ndn $FACEID ndn2013 | $CCNL_HOME/bin/ccn-lite-ccnb2xml
+
+$CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9002 "/ndn/ali/test" | $CCNL_HOME/bin/ccn-lite-pktdump
+
+Destroy Face at B:
+$CCNL_HOME/bin/ccn-lite-ctrl -x /tmp/mgmt-nfn-relay-b.sock destroyface $FACEID | $CCNL_HOME/bin/ccn-lite-ccnb2xml
+
+Halt B:
+$CCNL_HOME/bin/ccn-lite-ctrl -x /tmp/mgmt-nfn-relay-b.sock debug halt | $CCNL_HOME/bin/ccn-lite-ccnb2xml

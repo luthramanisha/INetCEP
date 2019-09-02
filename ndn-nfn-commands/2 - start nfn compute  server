@@ -1,0 +1,16 @@
+cd /home/veno/Thesis/nfn-scala &&
+
+using code:
+
+sbt 'runMain runnables.production.ComputeServerStarter --mgmtsocket /tmp/mgmt-nfn-relay-a.sock --ccnl-port 9001 --cs-port 9002 --debug --ccnl-already-running /node/nodeA'
+
+build/create jar:
+sbt compile
+sbt assembly
+
+using precompiled jar:
+java -jar nfn.jar --mgmtsocket /tmp/mgmt-nfn-relay-a.sock --ccnl-port 9001 --cs-port 9002 --debug --ccnl-already-running /node/nodeA
+
+or 
+
+java -jar nfn-assembly-0.2.0.jar --mgmtsocket /tmp/mgmt-nfn-relay-a.sock --ccnl-port 9001 --cs-port 9002 --debug --ccnl-already-running /node/nodeA

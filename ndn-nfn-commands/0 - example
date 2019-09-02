@@ -1,0 +1,65 @@
+0: make content
+$CCNL_HOME/bin/ccn-lite-mkC -i /home/veno/Thesis/testdata -o $CCNL_HOME/test/ndntlv/testcontent.ndntlv -s ndn2013 "/ndn/ali/test"
+
+1: start relay
+$CCNL_HOME/bin/ccn-nfn-relay -v trace -u 9001 -x /tmp/mgmt-nfn-relay-a.sock -d $CCNL_HOME/test/ndntlv
+
+2: start compute server
+java -jar nfn-assembly-0.2.0.jar --mgmtsocket /tmp/mgmt-nfn-relay-a.sock --ccnl-port 9001 --cs-port 9002 --debug --ccnl-already-running /node/nodeA
+
+3: make nfn call:
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 2 /node/nodeA/nfn_service_WordCount 'foo bar'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 10 "call 2 /node/nodeA/nfn_service_WordCount /ndn/test/stream" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+4: just get data from content (this is the ndn call)
+$CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9001 -w 10 "/ndn/ali/test" | $CCNL_HOME/bin/ccn-lite-pktdump -f 2
+
+--------------------------------------------------------------------
+
+example 2:
+
+set sensor data:
+./sensors.sh 
+
+start nfn relay:
+$CCNL_HOME/bin/ccn-nfn-relay -v trace -u 9001 -x /tmp/mgmt-nfn-relay-a.sock -d $CCNL_HOME/test/ndntlv
+
+peek:
+$CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9001 -w 10 "/ndn/sensors/s3" | $CCNL_HOME/bin/ccn-lite-pktdump -f 2
+
+or nfn call (value)
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 1 "call 2 /node/nodeA/nfn_service_WordCount /ndn/sensors/s2" | $CCNL_HOME/bin/ccn-lite-pktdump -f 2
+
+--------------------------------------------------------------------
+
+example 3:
+link 2 nfn relays
+
+$CCNL_HOME/bin/ccn-lite-mkC -i /home/veno/Thesis/testdata -o $CCNL_HOME/test/ndntlv/testcontent.ndntlv -s ndn2013 "/ndn/ali/test2"
+
+A:
+$CCNL_HOME/bin/ccn-nfn-relay -v trace -s ndn2013 -u 9001 -x /tmp/mgmt-relay-a.sock
+B:
+$CCNL_HOME/bin/ccn-nfn-relay -v trace -s ndn2013 -u 9002 -x /tmp/mgmt-relay-b.sock -d $CCNL_HOME/test/ndntlv
+Face:
+FACEID=`$CCNL_HOME/bin/ccn-lite-ctrl -x /tmp/mgmt-relay-a.sock newUDPface any 127.0.0.1 9002 \
+  | $CCNL_HOME/bin/ccn-lite-ccnb2xml | grep FACEID | sed -e 's/^[^0-9]*\([0-9]\+\).*/\1/'`
+Apply face on A socket:
+$CCNL_HOME/bin/ccn-lite-ctrl -x /tmp/mgmt-relay-a.sock prefixreg /ndn $FACEID ndn2013   | $CCNL_HOME/bin/ccn-lite-ccnb2xml
+Send interest to A:
+$CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9001 "/ndn/ali/test2" \
+  | $CCNL_HOME/bin/ccn-lite-pktdump
+
+Cleanup (stop B, destroy face, stop A):
+$CCNL_HOME/bin/ccn-lite-ctrl -x /tmp/mgmt-relay-b.sock debug halt | $CCNL_HOME/bin/ccn-lite-ccnb2xml
+
+$CCNL_HOME/bin/ccn-lite-ctrl -x /tmp/mgmt-relay-a.sock destroyface $FACEID \
+  | $CCNL_HOME/bin/ccn-lite-ccnb2xml
+
+$CCNL_HOME/bin/ccn-lite-ctrl -x /tmp/mgmt-relay-a.sock debug halt | $CCNL_HOME/bin/ccn-lite-ccnb2xml
+
+
+
+

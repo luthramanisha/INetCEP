@@ -1,0 +1,70 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Relay",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/home/veno/Thesis/ccn-lite/bin/ccn-nfn-relay",
+            "args": ["-v", "trace", "-u", "9001", "-x", "/tmp/mgmt-nfn-relay-a.sock", "-d", "/home/veno/Thesis/ccn-lite/test/ali_tlv/nodeA/", "-s", "ccnx2015"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "AddContent",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/home/veno/Thesis/ccn-lite/bin/ccn-lite-ctrl",
+            "args": ["-x", "/tmp/mgmt-nfn-relay-a.sock", "addContentToCache", "/home/veno/Thesis/ccn-lite/test/ali_tlv/nodeB/test1.ccntlv"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        
+        {
+            "name": "Produce",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/home/veno/Thesis/ccn-lite/bin/ccn-lite-produce",
+            "args": ["-s", "ndn2013", "-i", "/home/veno/Thesis/ccn-lite/test/ali_tlv/testdata/data1", "-o", "/home/veno/Thesis/ccn-lite/test/ali_tlv/nodeB/", "/ndn/test/s0"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ],
+    "compounds": [
+	    { 
+	        "name": "Hybrid",
+	        "configurations": ["Relay", "AddContent"]
+        }
+    ]
+}

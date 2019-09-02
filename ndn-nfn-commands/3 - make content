@@ -1,0 +1,3 @@
+$CCNL_HOME/bin/ccn-lite-mkC -i /home/veno/Thesis/testdata -o $CCNL_HOME/test/ndntlv/testcontent.ndntlv -s ccnb "/ndn/test/stream"
+
+$CCNL_HOME/bin/ccn-lite-produce -i /home/veno/Thesis/ccn-lite/test/ali_tlv/testdata/data1 -o /home/veno/Thesis/ccn-lite/test/ali_tlv/nodeB/ -f s0 -s ndn2013 "/ndn/test/s0"

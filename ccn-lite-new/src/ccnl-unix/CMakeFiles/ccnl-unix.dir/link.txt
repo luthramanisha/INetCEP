@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libccnl-unix.a  CMakeFiles/ccnl-unix.dir/src/ccnl-unix.c.o
+/usr/bin/ranlib ../lib/libccnl-unix.a

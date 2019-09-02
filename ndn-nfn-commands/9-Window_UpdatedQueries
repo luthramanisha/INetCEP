@@ -1,0 +1,33 @@
+
+1) case Seq(deliveryFormat: NFNStringValue, sensor: NFNStringValue, lowerBound: NFNStringValue, upperBound: NFNStringValue) => processWindow(deliveryFormat, sensor, lowerBound, upperBound)
+
+Query: $CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9001 -w 10 "" "call 5 /node/nodeA/nfn_service_Window 'data' 'victims' '22:18:38.841' '22:18:43.841'/NFN" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+Sample Output:
+veno@veno-VirtualBox:~$ $CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9001 -w 10 "" "call 5 /node/nodeA/nfn_service_Window 'data' 'victims' '22:18:38.841' '22:18:41.841'/NFN" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+22:18:38.841/1001/M/50
+22:18:39.841/1002/F/40
+22:18:40.841/1003/F/22
+22:18:41.841/1004/M/8
+
+
+2) case Seq(deliveryFormat: NFNStringValue, sensor: NFNStringValue, timerPeriod: NFNIntValue, timeUnit: NFNStringValue) => processTimeBoundWindow(deliveryFormat, sensor, timerPeriod, timeUnit)
+
+Timeperiod always in int/long, unit is "S, M or H".
+Query: $CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9001 -w 10 "" "call 5 /node/nodeA/nfn_service_Window 'data' 'victims' 5 'M'/NFN" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+Sample Output:
+veno@veno-VirtualBox:~$ $CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9001 -w 10 "" "call 5 /node/nodeA/nfn_service_Window 'data' 'victims' 5 'M'/NFN" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+15:42:00.001/1002/F/40
+15:43:00.001/1004/M/8
+15:44:00.001/1005/F/6
+15:45:00.001/1006/M/25
+15:46:00.001/1003/F/22
+
+3) case Seq(deliveryFormat: NFNStringValue, sensor: NFNStringValue, numberOfEvents: NFNIntValue) => processEventBoundWindow(deliveryFormat, sensor, numberOfEvents.i)
+$CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9001 -w 10 "" "call 4 /node/nodeA/nfn_service_Window 'data' 'victims' 3 /NFN" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+
+Sample Output:
+veno@veno-VirtualBox:~$ $CCNL_HOME/bin/ccn-lite-peek -s ndn2013 -u 127.0.0.1/9001 -w 10 "" "call 4 /node/nodeA/nfn_service_Window 'data' 'victims' 3 /NFN" | $CCNL_HOME/bin/ccn-lite-pktdump -f 3
+15:41:00.001/1001/M/50
+15:42:00.001/1002/F/40
+15:43:00.001/1004/M/8

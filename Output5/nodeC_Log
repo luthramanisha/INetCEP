@@ -1,0 +1,123 @@
+[2019-03-06 15:58:37.929][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 15:58:38.355][SACEPICN]: Query Result from network node: 9003|victims|9002=.137,9007=.103|100
+[2019-03-06 15:59:17.934][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 15:59:18.345][SACEPICN]: Query Result from network node: 9003|victims|9002=.1937,9007=.114|100
+[2019-03-06 15:59:57.317][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 15:59:57.318][SACEPICN]: Query Result from network node: 9003|victims|9002=.1937,9007=.114|100
+[2019-03-06 16:00:38.123][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:00:38.526][SACEPICN]: Query Result from network node: 9003|victims|9002=.215,9007=.1685|99
+[2019-03-06 16:01:18.350][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:01:18.765][SACEPICN]: Query Result from network node: 9003|victims|9002=.1832,9007=.1643|98
+[2019-03-06 16:01:57.463][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:01:57.464][SACEPICN]: Query Result from network node: 9003|victims|9002=.1832,9007=.1643|98
+[2019-03-06 16:02:38.271][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:02:38.717][SACEPICN]: Query Result from network node: 9003|victims|9002=.1569,9007=.1548|98
+[2019-03-06 16:03:18.397][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:03:19.054][SACEPICN]: Query Result from network node: 9003|victims|9002=.223,9007=.1202|98
+[2019-03-06 16:03:21.288][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:03:22.033][SACEPICN]: Query Result from network node: /9003/PREDICT2/onWindow/16321
+[2019-03-06 16:03:23.544][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:03:24.035][SACEPICN]: Query Result from network node: 16:22:30,1967,0,0,1,57.573912841796876
+16:23,1968,0,0,1,65.57246972390264
+[2019-03-06 16:03:57.571][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:03:57.573][SACEPICN]: Query Result from network node: 9003|victims|9002=.223,9007=.1202|98
+[2019-03-06 16:03:57.653][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:03:58.359][SACEPICN]: Query Result from network node: /9003/PREDICT2/onWindow/16358
+[2019-03-06 16:03:59.939][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:04:00.458][SACEPICN]: Query Result from network node: 16:22:30,1967,0,0,1,57.573912841796876
+16:23,1968,0,0,1,65.57246972390264
+[2019-03-06 16:04:21.905][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:04:22.454][SACEPICN]: Query Result from network node: 9003|victims|9002=.2199,9007=.1727|98
+[2019-03-06 16:05:02.120][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:05:02.626][SACEPICN]: Query Result from network node: 9003|victims|9002=.1632,9007=.1800|98
+[2019-03-06 16:05:41.182][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:05:41.188][SACEPICN]: Query Result from network node: 9003|victims|9002=.1632,9007=.1800|98
+[2019-03-06 16:06:22.194][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:06:22.687][SACEPICN]: Query Result from network node: 9003|victims|9002=.160,9007=.1464|97
+[2019-03-06 16:07:02.198][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:07:02.699][SACEPICN]: Query Result from network node: 9003|victims|9002=.160,9007=.1464|97
+[2019-03-06 16:07:05.719][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:07:06.518][SACEPICN]: Query Result from network node: /9003/PREDICT2/onWindow/1676
+[2019-03-06 16:07:08.140][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:07:08.691][SACEPICN]: Query Result from network node: 16:22:30,1967,0,0,1,57.573912841796876
+16:23,1968,0,0,1,65.57246972390264
+[2019-03-06 16:07:41.442][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:07:41.447][SACEPICN]: Query Result from network node: 9003|victims|9002=.160,9007=.1464|97
+[2019-03-06 16:07:41.543][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:07:42.521][SACEPICN]: Query Result from network node: /9003/PREDICT2/onWindow/16742
+[2019-03-06 16:07:44.313][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:07:44.892][SACEPICN]: Query Result from network node: 16:22:30,1967,0,0,1,57.573912841796876
+16:23,1968,0,0,1,65.57246972390264
+[2019-03-06 16:08:06.598][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:08:07.124][SACEPICN]: Query Result from network node: 9003|victims|9002=.2115,9007=.200|97
+[2019-03-06 16:08:09.735][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:08:10.478][SACEPICN]: Query Result from network node: /9003/PREDICT2/onWindow/16810
+[2019-03-06 16:08:12.500][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:08:13.017][SACEPICN]: Query Result from network node: 16:22:30,1967,0,0,1,57.573912841796876
+16:23,1968,0,0,1,65.57246972390264
+[2019-03-06 16:08:45.647][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:08:45.648][SACEPICN]: Query Result from network node: 9003|victims|9002=.2115,9007=.200|97
+[2019-03-06 16:08:45.755][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:08:46.558][SACEPICN]: Query Result from network node: /9003/PREDICT2/onWindow/16846
+[2019-03-06 16:08:48.607][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:08:49.160][SACEPICN]: Query Result from network node: 16:22:30,1967,0,0,1,57.573912841796876
+16:23,1968,0,0,1,65.57246972390264
+[2019-03-06 16:09:26.566][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:09:27.099][SACEPICN]: Query Result from network node: 9003|victims|9002=.1937,9007=.21|97
+[2019-03-06 16:09:30.102][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:09:30.869][SACEPICN]: Query Result from network node: /9003/PREDICT2/onWindow/16930
+[2019-03-06 16:09:32.586][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:09:33.190][SACEPICN]: Query Result from network node: 16:22:30,1967,0,0,1,57.573912841796876
+16:23,1968,0,0,1,65.57246972390264
+[2019-03-06 16:10:06.776][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:10:07.446][SACEPICN]: Query Result from network node: 9003|victims|9002=.2283,9007=.1811|97
+[2019-03-06 16:10:09.963][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:10:10.732][SACEPICN]: Query Result from network node: /9003/PREDICT2/onWindow/161010
+[2019-03-06 16:10:12.617][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:10:13.182][SACEPICN]: Query Result from network node: 16:22:30,1967,0,0,1,57.573912841796876
+16:23,1968,0,0,1,65.57246972390264
+[2019-03-06 16:10:45.770][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:10:45.771][SACEPICN]: Query Result from network node: 9003|victims|9002=.2283,9007=.1811|97
+[2019-03-06 16:10:45.871][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:10:46.628][SACEPICN]: Query Result from network node: /9003/PREDICT2/onWindow/161046
+[2019-03-06 16:10:48.670][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:10:49.300][SACEPICN]: Query Result from network node: 16:22:30,1967,0,0,1,57.573912841796876
+16:23,1968,0,0,1,65.57246972390264
+[2019-03-06 16:11:26.821][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:11:27.393][SACEPICN]: Query Result from network node: 9003|victims|9002=.213,9007=.1979|96
+[2019-03-06 16:12:06.786][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:12:07.354][SACEPICN]: Query Result from network node: 9003|victims|9002=.213,9007=.1979|96
+[2019-03-06 16:12:09.963][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:12:10.981][SACEPICN]: Query Result from network node: /9003/PREDICT2/onWindow/161210
+[2019-03-06 16:12:12.904][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:12:13.504][SACEPICN]: Query Result from network node: 16:22:30,1967,0,0,1,57.573912841796876
+16:23,1968,0,0,1,65.57246972390264
+[2019-03-06 16:12:45.940][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:12:45.942][SACEPICN]: Query Result from network node: 9003|victims|9002=.213,9007=.1979|96
+[2019-03-06 16:12:45.997][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:12:46.828][SACEPICN]: Query Result from network node: /9003/PREDICT2/onWindow/161246
+[2019-03-06 16:12:49.159][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:12:49.887][SACEPICN]: Query Result from network node: 16:22:30,1967,0,0,1,57.573912841796876
+16:23,1968,0,0,1,65.57246972390264
+[2019-03-06 16:13:26.987][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:13:27.584][SACEPICN]: Query Result from network node: 9003|victims|9002=.170,9007=.133|96
+[2019-03-06 16:14:07.050][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:14:07.652][SACEPICN]: Query Result from network node: 9003|victims|9002=.201,9007=.1905|96
+[2019-03-06 16:14:10.370][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:14:11.251][SACEPICN]: Query Result from network node: /9003/PREDICT2/onWindow/161411
+[2019-03-06 16:14:13.119][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:14:13.729][SACEPICN]: Query Result from network node: 16:22:30,1967,0,0,1,57.573912841796876
+16:23,1968,0,0,1,65.57246972390264
+[2019-03-06 16:14:46.033][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:14:46.034][SACEPICN]: Query Result from network node: 9003|victims|9002=.201,9007=.1905|96
+[2019-03-06 16:14:46.106][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:14:46.945][SACEPICN]: Query Result from network node: /9003/PREDICT2/onWindow/161446
+[2019-03-06 16:14:48.858][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:14:49.467][SACEPICN]: Query Result from network node: 16:22:30,1967,0,0,1,57.573912841796876
+16:23,1968,0,0,1,65.57246972390264
+[2019-03-06 16:15:27.120][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:15:27.740][SACEPICN]: Query Result from network node: 9003|victims|9002=.221,9007=.1559|96
+[2019-03-06 16:16:07.192][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:16:07.816][SACEPICN]: Query Result from network node: 9003|victims|9002=.204,9007=.154|95
+[2019-03-06 16:16:46.247][SACEPICN]: execute NFN query called with nodeC
+[2019-03-06 16:16:46.248][SACEPICN]: Query Result from network node: 9003|victims|9002=.204,9007=.154|95

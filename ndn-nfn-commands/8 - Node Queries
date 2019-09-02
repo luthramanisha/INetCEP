@@ -1,0 +1,17 @@
+Central - Remote NS:
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 20 "call 6 /node/nodeA/nfn_service_QueryCentralRemNS '9001' 'Client1' 'JOIN([name],[FILTER(name,WINDOW(victims,22:18:36.800,22:18:44.000),3=M&4>30,name)],[FILTER(name,WINDOW(survivors,22:18:35.800,22:18:41.000),3=F&4>20,name)],[NULL])' 'Region1' '22:10:11.226'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 2
+
+Random - Remote NS:
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 20 "call 6 /node/nodeA/nfn_service_QueryRandomRemNS '9001' 'Client1' 'JOIN([name],[FILTER(name,WINDOW(victims,22:18:36.800,22:18:44.000),3=M&4>30,name)],[FILTER(name,WINDOW(survivors,22:18:35.800,22:18:41.000),3=F&4>20,name)],[NULL])' 'Region1' '22:10:11.226'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 2
+
+
+------------------------------------
+Central - Local NS:
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 127.0.0.1/9001 -w 20 "call 6 /node/nodeA/nfn_service_QueryCentralLocalNS 'nodeA' 'Client1' 'JOIN([name],[FILTER(name,WINDOW(victims,22:18:36.800,22:18:44.000),3=M&4>30,name)],[FILTER(name,WINDOW(survivors,22:18:35.800,22:18:41.000),3=F&4>20,name)],[NULL])' 'Region1' '22:10:11.226'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 2
+
+VM:
+
+$CCNL_HOME/bin/ccn-lite-simplenfn -s ndn2013 -u 10.2.1.28/9001 -w 20 "call 6 /node/nodeA/nfn_service_QueryCentralLocalNS '9001' 'Client1' 'JOIN([name],[FILTER(name,WINDOW(victims,22:18:36.800,22:18:44.000),3=M&4>30,name)],[FILTER(name,WINDOW(survivors,22:18:35.800,22:18:41.000),3=F&4>20,name)],[NULL])' 'Region1' '22:10:11.226'" | $CCNL_HOME/bin/ccn-lite-pktdump -f 2

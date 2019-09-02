@@ -1,0 +1,557 @@
+[2019-03-06 16:25:24.633][SACEPICN]: Query Execution Started
+[2019-03-06 16:25:24.641][SACEPICN]: Query appended to Query Store - Source Source
+[2019-03-06 16:25:24.642][SACEPICN]: Operator Tree creation Started
+[2019-03-06 16:25:24.665][SACEPICN]: Operator Tree creation Completed
+[2019-03-06 16:25:24.666][SACEPICN]: Get Node Status Started - Algorithm Enum => 1
+[2019-03-06 16:25:24.715][SACEPICN]: execute NFN query called with nodeA
+[2019-03-06 16:25:36.993][SACEPICN]: Query Execution Started
+[2019-03-06 16:25:36.995][SACEPICN]: Query NOT appended to Query Store - Source QS
+[2019-03-06 16:25:36.995][SACEPICN]: Operator Tree creation Started
+[2019-03-06 16:25:37.007][SACEPICN]: Operator Tree creation Completed
+[2019-03-06 16:25:37.008][SACEPICN]: Get Node Status Started - Algorithm Enum => 1
+[2019-03-06 16:25:37.010][SACEPICN]: execute NFN query called with nodeA
+[2019-03-06 16:26:17.049][SACEPICN]: Query Execution Started
+[2019-03-06 16:26:17.049][SACEPICN]: Query NOT appended to Query Store - Source QS
+[2019-03-06 16:26:17.050][SACEPICN]: Operator Tree creation Started
+[2019-03-06 16:26:17.051][SACEPICN]: Operator Tree creation Completed
+[2019-03-06 16:26:17.052][SACEPICN]: Get Node Status Started - Algorithm Enum => 1
+[2019-03-06 16:26:17.059][SACEPICN]: execute NFN query called with nodeA
+[2019-03-06 16:26:17.329][SACEPICN]: Query Result from network node: 9001|victims|9002=.3512|99
+[2019-03-06 16:26:17.334][SACEPICN]: Node Added: 9001
+[2019-03-06 16:26:17.737][SACEPICN]: Node Added: 9002
+[2019-03-06 16:26:18.117][SACEPICN]: Node Added: 9003
+[2019-03-06 16:26:18.578][SACEPICN]: Node Added: 9004
+[2019-03-06 16:26:19.027][SACEPICN]: Node Added: 9005
+[2019-03-06 16:26:19.474][SACEPICN]: Node Added: 9006
+[2019-03-06 16:26:19.918][SACEPICN]: Node Added: 9007
+[2019-03-06 16:26:19.918][SACEPICN]: Get Node Status Completed
+[2019-03-06 16:26:19.919][SACEPICN]: Building Paths Started
+[2019-03-06 16:26:19.921][SACEPICN]: add new Node in traversal List -> 9002
+[2019-03-06 16:26:19.921][SACEPICN]: getTraversalNodes -> on Root
+[2019-03-06 16:26:19.922][SACEPICN]: oneStepTraverse ROOT added -> NULL -> 9001
+[2019-03-06 16:26:19.929][SACEPICN]: oneStepTraverse -> on Root
+[2019-03-06 16:26:19.933][SACEPICN]: oneStepTraverse -> 9002 - 0.3512
+[2019-03-06 16:26:19.933][SACEPICN]: oneStepTraverse hop added -> 9001 -> 9002
+[2019-03-06 16:26:19.934][SACEPICN]: While -> Next -> 9002
+[2019-03-06 16:26:19.936][SACEPICN]: While -> Retrieve HopInfo
+
+[2019-03-06 16:26:19.942][SACEPICN]: oneStepTraverse -> 9003 - 0.142
+[2019-03-06 16:26:19.943][SACEPICN]: oneStepTraverse hop added -> 9002 -> 9003
+[2019-03-06 16:26:19.943][SACEPICN]: oneStepTraverse -> 9001 - 0.216
+[2019-03-06 16:26:19.943][SACEPICN]: oneStepTraverse hop added -> 9002 -> 9001
+[2019-03-06 16:26:19.944][SACEPICN]: oneStepTraverse -> 9005 - 0.0897
+[2019-03-06 16:26:19.944][SACEPICN]: oneStepTraverse hop added -> 9002 -> 9005
+[2019-03-06 16:26:19.945][SACEPICN]: oneStepTraverse -> 9004 - 0.139
+[2019-03-06 16:26:19.945][SACEPICN]: oneStepTraverse hop added -> 9002 -> 9004
+[2019-03-06 16:26:19.950][SACEPICN]: While -> Retrieve other traversal nodes
+[2019-03-06 16:26:19.951][SACEPICN]: add new Node in traversal List -> 9003
+[2019-03-06 16:26:19.951][SACEPICN]: add new Node in traversal List -> 9005
+[2019-03-06 16:26:19.951][SACEPICN]: add new Node in traversal List -> 9004
+[2019-03-06 16:26:19.952][SACEPICN]: While -> remove current node from traversal
+[2019-03-06 16:26:19.952][SACEPICN]: While -> Next -> 9003
+[2019-03-06 16:26:19.952][SACEPICN]: While -> Retrieve HopInfo
+
+[2019-03-06 16:26:19.953][SACEPICN]: oneStepTraverse -> 9002 - 0.1905
+[2019-03-06 16:26:19.953][SACEPICN]: oneStepTraverse hop added -> 9003 -> 9002
+[2019-03-06 16:26:19.953][SACEPICN]: oneStepTraverse -> 9007 - 0.174
+[2019-03-06 16:26:19.954][SACEPICN]: oneStepTraverse hop added -> 9003 -> 9007
+[2019-03-06 16:26:19.955][SACEPICN]: While -> Retrieve other traversal nodes
+[2019-03-06 16:26:19.955][SACEPICN]: add new Node in traversal List -> 9007
+[2019-03-06 16:26:19.956][SACEPICN]: While -> remove current node from traversal
+[2019-03-06 16:26:19.957][SACEPICN]: While -> Next -> 9005
+[2019-03-06 16:26:19.957][SACEPICN]: While -> Retrieve HopInfo
+
+[2019-03-06 16:26:19.957][SACEPICN]: oneStepTraverse -> 9002 - 0.08
+[2019-03-06 16:26:19.958][SACEPICN]: oneStepTraverse hop added -> 9005 -> 9002
+[2019-03-06 16:26:19.958][SACEPICN]: oneStepTraverse -> 9006 - 0.1937
+[2019-03-06 16:26:19.958][SACEPICN]: oneStepTraverse hop added -> 9005 -> 9006
+[2019-03-06 16:26:19.959][SACEPICN]: While -> Retrieve other traversal nodes
+[2019-03-06 16:26:19.960][SACEPICN]: add new Node in traversal List -> 9006
+[2019-03-06 16:26:19.960][SACEPICN]: While -> remove current node from traversal
+[2019-03-06 16:26:19.960][SACEPICN]: While -> Next -> 9004
+[2019-03-06 16:26:19.961][SACEPICN]: While -> Retrieve HopInfo
+
+[2019-03-06 16:26:19.961][SACEPICN]: oneStepTraverse -> 9002 - 0.2252
+[2019-03-06 16:26:19.961][SACEPICN]: oneStepTraverse hop added -> 9004 -> 9002
+[2019-03-06 16:26:19.962][SACEPICN]: While -> Retrieve other traversal nodes
+[2019-03-06 16:26:19.962][SACEPICN]: While -> remove current node from traversal
+[2019-03-06 16:26:19.963][SACEPICN]: While -> Next -> 9007
+[2019-03-06 16:26:19.964][SACEPICN]: While -> Retrieve HopInfo
+
+[2019-03-06 16:26:19.966][SACEPICN]: oneStepTraverse -> 9003 - 0.1517
+[2019-03-06 16:26:19.966][SACEPICN]: oneStepTraverse hop added -> 9007 -> 9003
+[2019-03-06 16:26:19.967][SACEPICN]: While -> Retrieve other traversal nodes
+[2019-03-06 16:26:19.968][SACEPICN]: While -> remove current node from traversal
+[2019-03-06 16:26:19.968][SACEPICN]: While -> Next -> 9006
+[2019-03-06 16:26:19.969][SACEPICN]: While -> Retrieve HopInfo
+
+[2019-03-06 16:26:19.969][SACEPICN]: oneStepTraverse -> 9005 - 0.1506
+[2019-03-06 16:26:19.970][SACEPICN]: oneStepTraverse hop added -> 9006 -> 9005
+[2019-03-06 16:26:19.976][SACEPICN]: While -> Retrieve other traversal nodes
+[2019-03-06 16:26:19.976][SACEPICN]: While -> remove current node from traversal
+[2019-03-06 16:26:19.983][SACEPICN]: checkPath - Current => 9001
+[2019-03-06 16:26:19.984][SACEPICN]: Path: NULL --(0.0)--> 9001 
+
+[2019-03-06 16:26:19.985][SACEPICN]: checkPath - Current => 9002
+[2019-03-06 16:26:19.985][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9001 -> 9002
+[2019-03-06 16:26:19.986][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:19.986][SACEPICN]: Previous Weight values were: Energy=0.0 and BDP=0.0 
+[2019-03-06 16:26:19.987][SACEPICN]: This is the first hop for adaptive weight application
+[2019-03-06 16:26:19.987][SACEPICN]: Path: NULL --(0.0)--> 9001  --(BDP: 49.68)--> 9002 
+
+[2019-03-06 16:26:19.988][SACEPICN]: checkPath - Current => 9003
+[2019-03-06 16:26:19.989][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9002 -> 9003
+[2019-03-06 16:26:19.989][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:19.990][SACEPICN]: Previous Weight values were: Energy=0.5 and BDP=0.5 
+[2019-03-06 16:26:19.990][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:19.990][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9001 -> 9002
+[2019-03-06 16:26:19.991][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:19.995][SACEPICN]: Previous Weight values were: Energy=0.5 and BDP=0.5 
+[2019-03-06 16:26:19.996][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:19.996][SACEPICN]: Path: NULL --(0.0)--> 9001  --(BDP: 39.81)--> 9002  --(BDP: 49.57)--> 9003 
+
+[2019-03-06 16:26:19.996][SACEPICN]: checkPath - Current => 9001
+[2019-03-06 16:26:19.997][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9002 -> 9001
+[2019-03-06 16:26:19.997][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9001 -> 9002
+[2019-03-06 16:26:19.997][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:19.999][SACEPICN]: Previous Weight values were: Energy=0.6 and BDP=0.4 
+[2019-03-06 16:26:19.999][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.001][SACEPICN]: Path: NULL --(0.0)--> 9001  --(BDP: 39.81)--> 9002 
+
+[2019-03-06 16:26:20.002][SACEPICN]: checkPath - Current => 9005
+[2019-03-06 16:26:20.003][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9002 -> 9005
+[2019-03-06 16:26:20.003][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.006][SACEPICN]: Previous Weight values were: Energy=0.6 and BDP=0.4 
+[2019-03-06 16:26:20.007][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.007][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9001 -> 9002
+[2019-03-06 16:26:20.007][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.009][SACEPICN]: Previous Weight values were: Energy=0.6 and BDP=0.4 
+[2019-03-06 16:26:20.010][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.010][SACEPICN]: Path: NULL --(0.0)--> 9001  --(BDP: 29.95)--> 9002  --(BDP: 39.65)--> 9005 
+
+[2019-03-06 16:26:20.011][SACEPICN]: checkPath - Current => 9004
+[2019-03-06 16:26:20.011][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9002 -> 9004
+[2019-03-06 16:26:20.011][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.012][SACEPICN]: Previous Weight values were: Energy=0.7 and BDP=0.3 
+[2019-03-06 16:26:20.012][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.012][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9001 -> 9002
+[2019-03-06 16:26:20.013][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.013][SACEPICN]: Previous Weight values were: Energy=0.7 and BDP=0.3 
+[2019-03-06 16:26:20.013][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.022][SACEPICN]: Path: NULL --(0.0)--> 9001  --(BDP: 20.08)--> 9002  --(BDP: 29.8)--> 9004 
+
+[2019-03-06 16:26:20.022][SACEPICN]: checkPath - Current => 9002
+[2019-03-06 16:26:20.023][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9003 -> 9002
+[2019-03-06 16:26:20.023][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9002 -> 9003
+[2019-03-06 16:26:20.023][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.024][SACEPICN]: Previous Weight values were: Energy=0.8 and BDP=0.2 
+[2019-03-06 16:26:20.028][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.028][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9001 -> 9002
+[2019-03-06 16:26:20.029][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.029][SACEPICN]: Previous Weight values were: Energy=0.8 and BDP=0.2 
+[2019-03-06 16:26:20.029][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.030][SACEPICN]: Path: NULL --(0.0)--> 9001  --(BDP: 10.22)--> 9002  --(BDP: 19.91)--> 9003 
+
+[2019-03-06 16:26:20.034][SACEPICN]: checkPath - Current => 9007
+[2019-03-06 16:26:20.034][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9003 -> 9007
+[2019-03-06 16:26:20.035][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.035][SACEPICN]: Previous Weight values were: Energy=0.9 and BDP=0.1 
+[2019-03-06 16:26:20.035][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.039][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9002 -> 9003
+[2019-03-06 16:26:20.039][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.039][SACEPICN]: Previous Weight values were: Energy=0.9 and BDP=0.1 
+[2019-03-06 16:26:20.040][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.041][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9001 -> 9002
+[2019-03-06 16:26:20.041][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.041][SACEPICN]: Previous Weight values were: Energy=0.8 and BDP=0.2 
+[2019-03-06 16:26:20.041][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.042][SACEPICN]: Path: NULL --(0.0)--> 9001  --(BDP: 10.22)--> 9002  --(BDP: 19.91)--> 9003  --(BDP: 10.06)--> 9007 
+
+[2019-03-06 16:26:20.044][SACEPICN]: checkPath - Current => 9002
+[2019-03-06 16:26:20.044][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9005 -> 9002
+[2019-03-06 16:26:20.045][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9002 -> 9005
+[2019-03-06 16:26:20.050][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.051][SACEPICN]: Previous Weight values were: Energy=0.9 and BDP=0.1 
+[2019-03-06 16:26:20.051][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.055][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9001 -> 9002
+[2019-03-06 16:26:20.056][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.056][SACEPICN]: Previous Weight values were: Energy=0.9 and BDP=0.1 
+[2019-03-06 16:26:20.056][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.057][SACEPICN]: Path: NULL --(0.0)--> 9001  --(BDP: 0.35)--> 9002  --(BDP: 9.98)--> 9005 
+
+[2019-03-06 16:26:20.057][SACEPICN]: checkPath - Current => 9006
+[2019-03-06 16:26:20.057][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9005 -> 9006
+[2019-03-06 16:26:20.057][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.058][SACEPICN]: Previous Weight values were: Energy=1.0 and BDP=0.0 
+[2019-03-06 16:26:20.068][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.069][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9002 -> 9005
+[2019-03-06 16:26:20.070][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.073][SACEPICN]: Previous Weight values were: Energy=1.0 and BDP=0.0 
+[2019-03-06 16:26:20.074][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.077][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9001 -> 9002
+[2019-03-06 16:26:20.078][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.078][SACEPICN]: Previous Weight values were: Energy=0.9 and BDP=0.1 
+[2019-03-06 16:26:20.078][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.079][SACEPICN]: Path: NULL --(0.0)--> 9001  --(BDP: 0.35)--> 9002  --(BDP: 9.98)--> 9005  --(BDP: 0.19)--> 9006 
+
+[2019-03-06 16:26:20.079][SACEPICN]: checkPath - Current => 9002
+[2019-03-06 16:26:20.080][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9004 -> 9002
+[2019-03-06 16:26:20.080][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9002 -> 9004
+[2019-03-06 16:26:20.081][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.082][SACEPICN]: Previous Weight values were: Energy=1.0 and BDP=0.0 
+[2019-03-06 16:26:20.083][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.087][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9001 -> 9002
+[2019-03-06 16:26:20.087][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.088][SACEPICN]: Previous Weight values were: Energy=1.0 and BDP=0.0 
+[2019-03-06 16:26:20.088][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.088][SACEPICN]: Path: NULL --(0.0)--> 9001  --(BDP: 0.35)--> 9002  --(BDP: 0.14)--> 9004 
+
+[2019-03-06 16:26:20.088][SACEPICN]: checkPath - Current => 9003
+[2019-03-06 16:26:20.095][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9007 -> 9003
+[2019-03-06 16:26:20.095][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9003 -> 9007
+[2019-03-06 16:26:20.095][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.096][SACEPICN]: Previous Weight values were: Energy=1.0 and BDP=0.0 
+[2019-03-06 16:26:20.096][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.096][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9002 -> 9003
+[2019-03-06 16:26:20.096][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.097][SACEPICN]: Previous Weight values were: Energy=1.0 and BDP=0.0 
+[2019-03-06 16:26:20.097][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.103][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9001 -> 9002
+[2019-03-06 16:26:20.103][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.103][SACEPICN]: Previous Weight values were: Energy=0.9 and BDP=0.1 
+[2019-03-06 16:26:20.104][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.105][SACEPICN]: Path: NULL --(0.0)--> 9001  --(BDP: 0.35)--> 9002  --(BDP: 10.03)--> 9003  --(BDP: 0.17)--> 9007 
+
+[2019-03-06 16:26:20.105][SACEPICN]: checkPath - Current => 9005
+[2019-03-06 16:26:20.106][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9006 -> 9005
+[2019-03-06 16:26:20.107][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9005 -> 9006
+[2019-03-06 16:26:20.107][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.107][SACEPICN]: Previous Weight values were: Energy=1.0 and BDP=0.0 
+[2019-03-06 16:26:20.114][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.115][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9002 -> 9005
+[2019-03-06 16:26:20.115][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.118][SACEPICN]: Previous Weight values were: Energy=1.0 and BDP=0.0 
+[2019-03-06 16:26:20.119][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.120][SACEPICN]: Current.Prev is not null - This node has a parent node => Path is: Parent -> Node = 9001 -> 9002
+[2019-03-06 16:26:20.120][SACEPICN]: Since we have a match - we will apply adaptive weightage
+[2019-03-06 16:26:20.120][SACEPICN]: Previous Weight values were: Energy=0.9 and BDP=0.1 
+[2019-03-06 16:26:20.121][SACEPICN]: This is a subsequent hop/s for adaptive weight application
+[2019-03-06 16:26:20.121][SACEPICN]: Path: NULL --(0.0)--> 9001  --(BDP: 0.35)--> 9002  --(BDP: 9.98)--> 9005  --(BDP: 0.19)--> 9006 
+
+[2019-03-06 16:26:20.124][SACEPICN]: Path Finished!
+[2019-03-06 16:26:20.124][SACEPICN]: Building Paths Completed
+[2019-03-06 16:26:20.128][SACEPICN]: Checking paths:
+[2019-03-06 16:26:20.134][SACEPICN]: 9001 - BDP: 0.0 - Hops: 1
+[2019-03-06 16:26:20.135][SACEPICN]: 9001 9002 - BDP: 49.68 - Hops: 2
+[2019-03-06 16:26:20.135][SACEPICN]: 9001 9002 9003 - BDP: 89.38 - Hops: 3
+[2019-03-06 16:26:20.135][SACEPICN]: 9001 9002 - BDP: 39.81 - Hops: 2
+[2019-03-06 16:26:20.136][SACEPICN]: 9001 9002 9005 - BDP: 69.6 - Hops: 3
+[2019-03-06 16:26:20.136][SACEPICN]: 9001 9002 9004 - BDP: 49.879999999999995 - Hops: 3
+[2019-03-06 16:26:20.136][SACEPICN]: 9001 9002 9003 - BDP: 30.130000000000003 - Hops: 3
+[2019-03-06 16:26:20.137][SACEPICN]: 9001 9002 9003 9007 - BDP: 40.19 - Hops: 4
+[2019-03-06 16:26:20.142][SACEPICN]: 9001 9002 9005 - BDP: 10.33 - Hops: 3
+[2019-03-06 16:26:20.143][SACEPICN]: 9001 9002 9005 9006 - BDP: 10.52 - Hops: 4
+[2019-03-06 16:26:20.144][SACEPICN]: 9001 9002 9004 - BDP: 0.49 - Hops: 3
+[2019-03-06 16:26:20.148][SACEPICN]: 9001 9002 9003 9007 - BDP: 10.549999999999999 - Hops: 4
+[2019-03-06 16:26:20.150][SACEPICN]: 9001 9002 9005 9006 - BDP: 10.52 - Hops: 4
+[2019-03-06 16:26:20.184][SACEPICN]: Checking optimal path energy weights:
+[2019-03-06 16:26:20.185][SACEPICN]: (9005,0.1)
+[2019-03-06 16:26:20.189][SACEPICN]: (9002,0.0)
+[2019-03-06 16:26:20.193][SACEPICN]: (9006,0.0)
+[2019-03-06 16:26:20.193][SACEPICN]: Checking optimal path BDP weights:
+[2019-03-06 16:26:20.194][SACEPICN]: (9005,0.9)
+[2019-03-06 16:26:20.202][SACEPICN]: (9002,1.0)
+[2019-03-06 16:26:20.202][SACEPICN]: (9006,1.0)
+[2019-03-06 16:26:20.203][SACEPICN]: Operator Placement Started
+[2019-03-06 16:26:20.203][SACEPICN]: CurrentNode: HEATMAP - Left Exists. Process Left
+[2019-03-06 16:26:20.203][SACEPICN]: CurrentNode: JOIN - Right Exists. Process Right
+[2019-03-06 16:26:20.204][SACEPICN]: CurrentNode: WINDOW - Processing Placement
+[2019-03-06 16:26:20.206][SACEPICN]: CurrentNode: WINDOW - Query: (call 6 /node/nodeF/nfn_service_Window '1551885977051' 'name' 'gps2' '15:23:00.000' '15:23:30.000')
+[2019-03-06 16:26:20.206][SACEPICN]: Current Optimal Path 9001 9002 9005 9006
+[2019-03-06 16:26:20.208][SACEPICN]: CurrentNode: Doing recursion, back to Parent!
+[2019-03-06 16:26:20.208][SACEPICN]: CurrentNode: JOIN - Left Exists. Process Left
+[2019-03-06 16:26:20.208][SACEPICN]: CurrentNode: WINDOW - Processing Placement
+[2019-03-06 16:26:20.218][SACEPICN]: CurrentNode: WINDOW - Query: (call 6 /node/nodeE/nfn_service_Window '1551885977051' 'name' 'gps1' '15:23:00.000' '15:23:30.000')
+[2019-03-06 16:26:20.238][SACEPICN]: Current Optimal Path 9001 9002 9005
+[2019-03-06 16:26:20.242][SACEPICN]: CurrentNode: Doing recursion, back to Parent!
+[2019-03-06 16:26:20.244][SACEPICN]: CurrentNode: JOIN - Processing Placement
+[2019-03-06 16:26:20.244][SACEPICN]: CurrentNode: JOIN - Query: (call 6 /node/nodeB/nfn_service_Join '1551885977051' 'name' 'name' '[Q1]' '[Q2]')
+[2019-03-06 16:26:20.244][SACEPICN]: Current Optimal Path 9001 9002
+[2019-03-06 16:26:20.245][SACEPICN]: CurrentNode: Doing recursion, back to Parent!
+[2019-03-06 16:26:20.245][SACEPICN]: CurrentNode: HEATMAP - Processing Placement
+[2019-03-06 16:26:20.245][SACEPICN]: CurrentNode: HEATMAP - Query: (call 10 /node/nodeA/nfn_service_Heatmap '1551885977050' 'name' 'name' '0.0015' '8.7262659072876' '8.8215389251709' '51.7832946777344' '51.8207664489746' '[Q1]')
+[2019-03-06 16:26:20.246][SACEPICN]: Current Optimal Path 9001
+[2019-03-06 16:26:20.246][SACEPICN]: CurrentNode: Doing recursion, back to Parent!
+[2019-03-06 16:26:20.248][SACEPICN]: Operator Placement Completed
+[2019-03-06 16:26:20.248][SACEPICN]: Query Deployement Started
+[2019-03-06 16:26:20.248][SACEPICN]: CurrentNode: HEATMAP - Left Exists. Process Left
+[2019-03-06 16:26:20.249][SACEPICN]: CurrentNode: JOIN - Right Exists. Process Right
+[2019-03-06 16:26:20.249][SACEPICN]: CurrentNode: WINDOW - Deploying Operator
+[2019-03-06 16:26:20.249][SACEPICN]: Found Window Operation and saved parameters startTime: 15:23:00.000, endTime:15:23:30.000
+[2019-03-06 16:26:20.249][SACEPICN]: CurrentNode: WINDOW - Query: (call 6 /node/nodeF/nfn_service_Window '1551885977051' 'name' 'gps2' '15:23:00.000' '15:23:30.000')
+[2019-03-06 16:26:21.094][SACEPICN]: Deployment result: /9006/window/gps2/162620
+
+[2019-03-06 16:26:21.095][SACEPICN]: CurrentNode: Execution completed. Doing recursion, back to Parent!
+[2019-03-06 16:26:21.095][SACEPICN]: CurrentNode: JOIN - Left Exists. Process Left
+[2019-03-06 16:26:21.095][SACEPICN]: CurrentNode: WINDOW - Deploying Operator
+[2019-03-06 16:26:21.096][SACEPICN]: Found Window Operation and saved parameters startTime: 15:23:00.000, endTime:15:23:30.000
+[2019-03-06 16:26:21.096][SACEPICN]: CurrentNode: WINDOW - Query: (call 6 /node/nodeE/nfn_service_Window '1551885977051' 'name' 'gps1' '15:23:00.000' '15:23:30.000')
+[2019-03-06 16:26:21.681][SACEPICN]: Deployment result: /9005/window/gps1/162621
+
+[2019-03-06 16:26:21.681][SACEPICN]: CurrentNode: Execution completed. Doing recursion, back to Parent!
+[2019-03-06 16:26:21.681][SACEPICN]: CurrentNode: JOIN - Deploying Operator
+[2019-03-06 16:26:21.682][SACEPICN]: CurrentNode: JOIN - Query: (call 6 /node/nodeB/nfn_service_Join '1551885977051' 'name' 'name' '/9005/window/gps1/162621' '/9006/window/gps2/162620')
+[2019-03-06 16:26:22.838][SACEPICN]: Deployment result: /9002/JOIN/onOperators/162622
+
+[2019-03-06 16:26:22.839][SACEPICN]: CurrentNode: Execution completed. Doing recursion, back to Parent!
+[2019-03-06 16:26:22.839][SACEPICN]: CurrentNode: HEATMAP - Deploying Operator
+[2019-03-06 16:26:22.839][SACEPICN]: CurrentNode: HEATMAP - Query: (call 10 /node/nodeA/nfn_service_Heatmap '1551885977050' 'name' 'name' '0.0015' '8.7262659072876' '8.8215389251709' '51.7832946777344' '51.8207664489746' '/9002/JOIN/onOperators/162622')
+[2019-03-06 16:26:22.839][SACEPICN]: execute NFN query called with nodeA
+[2019-03-06 16:26:23.037][SACEPICN]: HEATMAP OP started
+[2019-03-06 16:26:23.038][SACEPICN]: Perform Heatmap on named data
+[2019-03-06 16:26:23.039][SACEPICN]: Intermediate Named-Interest is: /9002/JOIN/onOperators/162622
+[2019-03-06 16:26:23.517][SACEPICN]: Result after fetching: 2017-09-02 15:23:01;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:02;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:03;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:04;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:05;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:06;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:07;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:08;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:09;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:10;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:11;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:12;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:13;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:14;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:15;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:16;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:17;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:18;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:19;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:20;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:21;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:22;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:23;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:24;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:25;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:26;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:27;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:28;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:29;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:30;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:22;0;51.81841278076172;8.727283477783203;162.0;8.0;None;None;
+2017-09-02 15:23:23;0;51.81841278076172;8.727282524108887;162.0;8.0;0.06576102893365486;0.06576102893365486;
+2017-09-02 15:23:23;0;51.81841278076172;8.727282524108887;162.0;8.0;0.0;None;
+2017-09-02 15:23:24;0;51.8183708190918;8.727314949035645;188.0;5.0;5.176583130692166;5.176583130692166;
+2017-09-02 15:23:25;0;51.81837844848633;8.727311134338379;188.0;4.0;0.8886974211968836;0.8886974211968836;
+2017-09-02 15:23:26;0;51.8183708190918;8.727293968200684;184.0;4.0;1.4566177743764235;1.4566177743764235;
+2017-09-02 15:23:27;0;51.81838607788086;8.727293014526367;182.0;4.0;1.6990255013879534;1.6990255013879534;
+2017-09-02 15:23:28;0;51.81839370727539;8.727304458618164;180.0;3.0;1.1590173764991651;1.1590173764991651;
+2017-09-02 15:23:29;0;51.81840133666992;8.72731876373291;177.0;3.0;1.3013865132319884;1.3013865132319884;
+2017-09-02 15:23:30;0;51.81840515136719;8.727333068847656;178.0;3.0;1.0738545149687857;1.0738545149687857;
+[2019-03-06 16:26:23.518][SACEPICN]: Intermediate Result: 2017-09-02 15:23:01;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:02;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:03;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:04;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:05;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:06;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:07;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:08;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:09;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:10;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:11;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:12;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:13;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:14;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:15;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:16;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:17;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:18;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:19;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:20;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:21;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:22;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:23;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:24;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:25;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:26;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:27;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:28;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:29;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:30;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;
+2017-09-02 15:23:22;0;51.81841278076172;8.727283477783203;162.0;8.0;None;None;
+2017-09-02 15:23:23;0;51.81841278076172;8.727282524108887;162.0;8.0;0.06576102893365486;0.06576102893365486;
+2017-09-02 15:23:23;0;51.81841278076172;8.727282524108887;162.0;8.0;0.0;None;
+2017-09-02 15:23:24;0;51.8183708190918;8.727314949035645;188.0;5.0;5.176583130692166;5.176583130692166;
+2017-09-02 15:23:25;0;51.81837844848633;8.727311134338379;188.0;4.0;0.8886974211968836;0.8886974211968836;
+2017-09-02 15:23:26;0;51.8183708190918;8.727293968200684;184.0;4.0;1.4566177743764235;1.4566177743764235;
+2017-09-02 15:23:27;0;51.81838607788086;8.727293014526367;182.0;4.0;1.6990255013879534;1.6990255013879534;
+2017-09-02 15:23:28;0;51.81839370727539;8.727304458618164;180.0;3.0;1.1590173764991651;1.1590173764991651;
+2017-09-02 15:23:29;0;51.81840133666992;8.72731876373291;177.0;3.0;1.3013865132319884;1.3013865132319884;
+2017-09-02 15:23:30;0;51.81840515136719;8.727333068847656;178.0;3.0;1.0738545149687857;1.0738545149687857;
+[2019-03-06 16:26:23.518][SACEPICN]: Heatmap is after the fetch
+[2019-03-06 16:26:23.521][SACEPICN]: Data to Process:List(2017-09-02 15:23:01;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:02;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:03;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:04;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:05;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:06;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:07;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:08;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:09;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:10;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:11;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:12;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:13;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:14;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:15;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:16;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:17;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:18;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:19;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:20;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:21;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:22;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:23;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:24;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:25;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:26;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:27;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:28;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:29;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:30;2;51.81821060180664;8.809637069702148;204.86953735351562;16.0;0.0;0.0;, 2017-09-02 15:23:22;0;51.81841278076172;8.727283477783203;162.0;8.0;None;None;, 2017-09-02 15:23:23;0;51.81841278076172;8.727282524108887;162.0;8.0;0.06576102893365486;0.06576102893365486;, 2017-09-02 15:23:23;0;51.81841278076172;8.727282524108887;162.0;8.0;0.0;None;, 2017-09-02 15:23:24;0;51.8183708190918;8.727314949035645;188.0;5.0;5.176583130692166;5.176583130692166;, 2017-09-02 15:23:25;0;51.81837844848633;8.727311134338379;188.0;4.0;0.8886974211968836;0.8886974211968836;, 2017-09-02 15:23:26;0;51.8183708190918;8.727293968200684;184.0;4.0;1.4566177743764235;1.4566177743764235;, 2017-09-02 15:23:27;0;51.81838607788086;8.727293014526367;182.0;4.0;1.6990255013879534;1.6990255013879534;, 2017-09-02 15:23:28;0;51.81839370727539;8.727304458618164;180.0;3.0;1.1590173764991651;1.1590173764991651;, 2017-09-02 15:23:29;0;51.81840133666992;8.72731876373291;177.0;3.0;1.3013865132319884;1.3013865132319884;, 2017-09-02 15:23:30;0;51.81840515136719;8.727333068847656;178.0;3.0;1.0738545149687857;1.0738545149687857;)
+[2019-03-06 16:26:23.627][SACEPICN]: HEATMAP OP: Prefix of node is: 9001
+[2019-03-06 16:26:23.628][SACEPICN]: Inside HEATMAP -> HEATMAP name: /9001/HEATMAP/onOperator/162623, HEATMAP content: Heatmap Start
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+Heatmap End
+[2019-03-06 16:26:23.629][SACEPICN]: Heatmap OP Completed
+
+[2019-03-06 16:26:23.742][SACEPICN]: Query Result from network node: /9001/HEATMAP/onOperator/162623
+[2019-03-06 16:26:23.743][SACEPICN]: Deployment result: /9001/HEATMAP/onOperator/162623
+
+[2019-03-06 16:26:23.743][SACEPICN]: CurrentNode: Execution completed. Doing recursion, back to Parent!
+[2019-03-06 16:26:23.743][SACEPICN]: Query Deployement Completed
+[2019-03-06 16:26:23.743][SACEPICN]: execute Interest query /9001/HEATMAP/onOperator/162623 called with nodeA
+[2019-03-06 16:26:23.746][SACEPICN]: Query Result from network node: Heatmap Start
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+Heatmap End
+[2019-03-06 16:26:23.756][SACEPICN]: Query Execution Completed
+[2019-03-06 16:26:23.756][SACEPICN]: Query Output = Heatmap Start
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
++---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+Heatmap End

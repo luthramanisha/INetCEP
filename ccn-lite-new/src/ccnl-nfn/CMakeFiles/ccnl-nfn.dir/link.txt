@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libccnl-nfn.a  CMakeFiles/ccnl-nfn.dir/src/ccnl-nfn-common.c.o CMakeFiles/ccnl-nfn.dir/src/ccnl-nfn-krivine.c.o CMakeFiles/ccnl-nfn.dir/src/ccnl-nfn-monitor.c.o CMakeFiles/ccnl-nfn.dir/src/ccnl-nfn-ops.c.o CMakeFiles/ccnl-nfn.dir/src/ccnl-nfn-parse.c.o CMakeFiles/ccnl-nfn.dir/src/ccnl-nfn-requests.c.o CMakeFiles/ccnl-nfn.dir/src/ccnl-nfn.c.o
+/usr/bin/ranlib ../lib/libccnl-nfn.a

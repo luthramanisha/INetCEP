@@ -1,0 +1,2 @@
+/usr/bin/ar qc libccnl-crypto.a  CMakeFiles/ccnl-crypto.dir/src/ccnl-crypto.c.o CMakeFiles/ccnl-crypto.dir/src/ccnl-ext-hmac.c.o CMakeFiles/ccnl-crypto.dir/src/lib-sha256.c.o
+/usr/bin/ranlib libccnl-crypto.a

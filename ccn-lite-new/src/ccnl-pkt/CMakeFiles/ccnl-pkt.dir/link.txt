@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libccnl-pkt.a  CMakeFiles/ccnl-pkt.dir/src/ccnl-pkt-builder.c.o CMakeFiles/ccnl-pkt.dir/src/ccnl-pkt-ccnb.c.o CMakeFiles/ccnl-pkt.dir/src/ccnl-pkt-ccntlv.c.o CMakeFiles/ccnl-pkt.dir/src/ccnl-pkt-localrpc.c.o CMakeFiles/ccnl-pkt.dir/src/ccnl-pkt-ndntlv.c.o CMakeFiles/ccnl-pkt.dir/src/ccnl-pkt-switch.c.o
+/usr/bin/ranlib ../lib/libccnl-pkt.a
