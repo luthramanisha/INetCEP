@@ -133,7 +133,7 @@ Starting up nodes requires the following:
 1. Starting ccn-lite relay on a network node (X) requires us to execute the startup script for that specific node. Let's take nodeID 28 as our sample node for the rest of this tutorial.
 
 	```bash
-	cd MA-Ali/VM-Startup-Scripts/VM28/
+	cd INetCEP/VM-Startup-Scripts/VM28/
 	./startNodes.sh
 	```
 
@@ -142,7 +142,7 @@ Inside the VM28 folder, the startNodes script resides. This script initializes a
 2. Starting the Compute Server is similar to a node. Make sure that you are in the same /VM28 folder and then execute the following script.
 
 	```bash
-	cd MA-Ali/VM-Startup-Scripts/VM28/
+	cd INetCEP/VM-Startup-Scripts/VM28/
 	./startCS.sh
 	```
 
