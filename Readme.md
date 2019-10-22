@@ -154,7 +154,7 @@ Inside the VM28 folder, the startNodes script resides. This script initializes a
 To start decentralized query processing in the network, we have to pass the Query Type (Centralized, Random, Decentralized) and the interval of re-evaluation for the query store.
 
 
-    cd MA-Ali/VM-Startup-Scripts/VM28/28
+    cd INetCEP/VM-Startup-Scripts/VM28/28
     ./startRemoteAny.sh QueryDecentral 20
 
 The startRemoteAny.sh script takes the query type (QueryDecentral -> basically the placement algorithm) that the system has to manage and the interval (20) that the query service has to consider for re-evaluations.
