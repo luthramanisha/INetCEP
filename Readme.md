@@ -1,6 +1,6 @@
-<img src="https://github.com/luthramanisha/INetCEP/blob/master/INetCEP.png" width="300" height="200" />
 
 # In-Network Complex Event Processing in Information-centric Networking
+<img src="https://github.com/luthramanisha/INetCEP/blob/master/INetCEP.png" width="300" height="200" />
 
 ## Prerequisites
 * Copy your public key to the remote machine using `copyKeys.sh` script
