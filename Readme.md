@@ -101,7 +101,7 @@ This project is based on the CCN-lite project forked from [here](https://github.
 Major enhancements are enlisted [here](changes.md)
 
 ## [Publications](#publications)
-+ Manisha Luthra, Boris Koldehofe, Jonas Höchst, Patrick Lampe, A.H. Rizvi, Ralf Kundel, and Bernd Freisleben. “INetCEP: In-Network Complex Event Processing for Information-Centric Networking.” In: Proceedings of the 15th ACM/IEEE Symposium on Architectures for Networking and Communications Systems (ANCS). 2019, pp. 1–13. 
++ Manisha Luthra, Boris Koldehofe, Jonas Höchst, Patrick Lampe, A.H. Rizvi, Ralf Kundel, and Bernd Freisleben. “INetCEP: In-Network Complex Event Processing for Information-Centric Networking.” In: Proceedings of the 15th ACM/IEEE Symposium on Architectures for Networking and Communications Systems (ANCS). 2019, pp. 1–13. https://doi.org/10.1109/ANCS.2019.8901877 URL (extended version): https://arxiv.org/pdf/2012.05239.pdf
 + Manisha Luthra, Johannes Pfannmüller, Boris Koldehofe, Jonas Höchst, Artur Sterz, Rhaban Hark, and Bernd Freisleben. “Efficient Complex Event Processing in Information-centric Networking at the Edge (under submission).” In: (2021), pp. 1–17. URL: https://arxiv.org/pdf/2012.05070.pdf
 
 ## [Acknowledgement](#acknowledgement)
