@@ -44,6 +44,7 @@ To start INetCEP on the cluster of resources (see VMS.cfg), please follow the st
         |      |
 
        (4)    (6)
+       
 using `python generate_node_info.py`. Note: this script uses VMS.cfg as input for IP address information. Ports used are 9001, 9001,..,9001+n. (n: number of nodes).
 
 #### Setup on GENI resources
