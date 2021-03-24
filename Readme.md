@@ -39,7 +39,7 @@ Note: Follow only one of the below options.
 
 To start INetCEP on the cluster of resources (see VMS.cfg), please follow the steps below: 
 
-#### Setup on VM compute resources
+#### Setup on VM compute resources or use CORE emulation as described [here](CORE.md)
 
 1. create your personalized VM configiration file `VMS.cfg` (refer VMS_MAKI1.cfg and VMS_MAKI2.cfg) for your user and IP addresses. 
 2. auto generate node data for the respective machines with the following topology: 
