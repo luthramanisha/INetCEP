@@ -6,7 +6,7 @@ INetCEP is a research project that enables in-network processing of CEP operator
 	+ handling on the new packets in ICN architecture
 + *A meta query language* to express CEP queries in the ICN data plane. 
 	+ support for standard CEP operators such as windows, joins, filters and aggregators
-	+ operator abstraction is highly extensible
+	+ operator abstraction to make it highly extensible
 + *CEP Query Engine* that parses, places and executes the queries in the data plane of ICN. 
 	+ concurrent execution of queries and query reuse 
 	+ centralized and decentralized operator placement algorithms
