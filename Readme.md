@@ -1,8 +1,21 @@
-<img style="float: left" src="https://github.com/luthramanisha/INetCEP/blob/master/INetCEP.png" width="300" height="200" />
-
 # In-Network Complex Event Processing in Information-centric Networking
+INETCEP is a research project that enables in-network processing of CEP operators on the data plane of an Information-centric networking (ICN) architecture. Particularly, this project provides a means to process CEP queries inside the network, i.e., ICN routers for delivering the complex events in an efficient manner. By processing events in the data plane, we can fulfill the demands of latency-critical applications. In our publication [2], we show that CEP queries can be processed in the order of a few microseconds using the power of programmable networks. Specifically, this project contributes the following: 
 
-## Prerequisites
++ *Unified communication model* to enable continuous processing of data streams in Information-centric networking architecture. 
++ *A meta query language* to express CEP queries in the ICN data plane. 
++ *CEP Query Engine* that parses, places and executes the queries in the data plane of ICN. 
+
+[Getting Started](#getting-started)
+
+[Publications](#publications)
+
+[Acknowledgement](#acknowledgement)
+
+[Contact](#contact)
+
+## [Getting Started](#getting-started)
+
+### Prerequisites
 * Copy your public key to the remote machine using `copyKeys.sh` script
 * Install dependencies and copy the binaries by 
 ```
@@ -13,11 +26,11 @@ bash publishRemotely.sh install
 There are two options to start INetCEP system. Basically Option 1 automates the entire process of option 2. 
 Note: Follow only one of the below options.
 
-## Option 1
+### Option 1
 
 To start INetCEP on the cluster of resources (see VMS.cfg), please follow the steps below: 
 
-### Setup on VM compute resources
+#### Setup on VM compute resources
 
 1. create your personalized VM configiration file `VMS.cfg` (refer VMS_MAKI1.cfg and VMS_MAKI2.cfg) for your user and IP addresses. 
 2. auto generate node data for the respective machines with the following topology: 
@@ -33,7 +46,7 @@ To start INetCEP on the cluster of resources (see VMS.cfg), please follow the st
        (4)    (6)
 using `python generate_node_info.py`. Note: this script uses VMS.cfg as input for IP address information. Ports used are 9001, 9001,..,9001+n. (n: number of nodes).
 
-### Setup on GENI resources
+#### Setup on GENI resources
 
 1. generate the Rspec file to request resources on GENI using `python generate_rspec.py <number of nodes> <out dir>`
 2. upload the rspec, select site and reserve resources. 
@@ -49,9 +62,9 @@ bash publish_scripts/publishRemotely.sh all "QueryPlacement" 20
 Here QueryPlacement is an element of set {"QueryCentralFixed", "QueryCentralLocalNS", "QueryCentralRemNS", "QueryDecentral", "QueryDecentralFixed", "QueryRandom", "QueryRandomLocalNS", "QueryRandomRemNS"}
 that are currently available placement services
 
-## Option 2
+### Option 2
 
-### Node Startup
+#### Node Startup
 Starting up nodes requires the following:
 * Startup of the ccn-lite relay
 * Linking a nfn-scala compute server with that relay
@@ -86,7 +99,7 @@ To start decentralized query processing in the network, we have to pass the Quer
 
 The startRemoteAny.sh script takes the query type (QueryDecentral -> basically the placement algorithm) that the system has to manage and the interval (20) that the query service has to consider for re-evaluations.
 
-## Query Execution
+### Query Execution
 
 In order to carry out query execution, we can access any node in the network and issue the following query. Here, any node in the network can act as a placement coordinator. Therefore, the query can be issued from any node to any node in the network.
 
@@ -101,8 +114,9 @@ This project is based on the CCN-lite project forked from [here](https://github.
 Major enhancements are enlisted [here](changes.md)
 
 ## [Publications](#publications)
-+ Manisha Luthra, Boris Koldehofe, Jonas Höchst, Patrick Lampe, A.H. Rizvi, Ralf Kundel, and Bernd Freisleben. “INetCEP: In-Network Complex Event Processing for Information-Centric Networking.” In: Proceedings of the 15th ACM/IEEE Symposium on Architectures for Networking and Communications Systems (ANCS). 2019, pp. 1–13. https://doi.org/10.1109/ANCS.2019.8901877 URL (extended version): https://arxiv.org/pdf/2012.05239.pdf
-+ Manisha Luthra, Johannes Pfannmüller, Boris Koldehofe, Jonas Höchst, Artur Sterz, Rhaban Hark, and Bernd Freisleben. “Efficient Complex Event Processing in Information-centric Networking at the Edge (under submission).” In: (2021), pp. 1–17. URL: https://arxiv.org/pdf/2012.05070.pdf
+[1] Manisha Luthra, Boris Koldehofe, Jonas Höchst, Patrick Lampe, A.H. Rizvi, Ralf Kundel, and Bernd Freisleben. “INetCEP: In-Network Complex Event Processing for Information-Centric Networking.” In: Proceedings of the 15th ACM/IEEE Symposium on Architectures for Networking and Communications Systems (ANCS). 2019, pp. 1–13.  <a href="https://doi.org/10.1109/ANCS.2019.8901877" target="_blank">10.1109/ANCS.2019.8901877</a> URL (extended version):  <a href="https://arxiv.org/pdf/2012.05239.pdf" target ="_blank"> arxiv.org/pdf/2012.05239.pdf </a>
+
+[2] Manisha Luthra, Johannes Pfannmüller, Boris Koldehofe, Jonas Höchst, Artur Sterz, Rhaban Hark, and Bernd Freisleben. “Efficient Complex Event Processing in Information-centric Networking at the Edge (under submission).” In: (2021), pp. 1–17. URL: <a href="https://arxiv.org/pdf/2012.05070.pdf" target="_blank"> arxiv.org/pdf/2012.05070.pdf </a>
 
 ## [Acknowledgement](#acknowledgement)
 
