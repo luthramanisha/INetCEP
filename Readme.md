@@ -2,8 +2,14 @@
 INetCEP is a research project that enables in-network processing of CEP operators on the data plane of an Information-centric networking (ICN) architecture. Particularly, this project provides a means to process CEP queries inside the network (ICN routers) for delivering the complex events in an efficient manner. By processing events in the data plane, we can fulfill the demands of latency-critical applications. In our publication [2], we show that CEP queries can be processed in the order of a few microseconds using the power of programmable networks, which is significantly faster than the SOA systems such as Flink. Specifically, this project contributes the following: 
 
 + *Unified communication model* to enable continuous processing of data streams in Information-centric networking architecture. 
+	+ support both push- and pull-based traffic
+	+ handling on the new packets in ICN architecture
 + *A meta query language* to express CEP queries in the ICN data plane. 
+	+ support for standard CEP operators such as windows, joins, filters and aggregators
+	+ operator abstraction is highly extensible
 + *CEP Query Engine* that parses, places and executes the queries in the data plane of ICN. 
+	+ concurrent execution of queries and query reuse 
+	+ centralized and decentralized operator placement algorithms
 
 [Getting Started](#getting-started)
 
