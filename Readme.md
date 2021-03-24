@@ -40,16 +40,17 @@ To start INetCEP on the cluster of resources (see VMS.cfg), please follow the st
 
 1. create your personalized VM configiration file `VMS.cfg` (refer VMS_MAKI1.cfg and VMS_MAKI2.cfg) for your user and IP addresses. 
 2. auto generate node data for the respective machines with the following topology: 
-
-       (3) -- (7)
-       
-        |
-
-   (1) -- (2) -- (5)
- 
-        |      |
-
-       (4)    (6)
+```
+             (3) -- (7)
+             
+              |
+              
+      (1) -- (2) -- (5)
+      
+              |      |
+              
+             (4)    (6)
+``` 
        
 using `python generate_node_info.py`. Note: this script uses VMS.cfg as input for IP address information. Ports used are 9001, 9001,..,9001+n. (n: number of nodes).
 
