@@ -63,14 +63,6 @@ The following services, classes were added to the system in order to build up IN
 
     src/main/scala/nfn/service/Filter
 
-* GetContent: Get network named-content for any interest
-
-    src/main/scala/nfn/service/GetContent
-
-* GetData: Get data hosted on a network node (data hosted on the nodes file-system). This can be used to manage remote config files etc.
-
-    src/main/scala/nfn/service/GetData
-
 * Join: A services that provides JOIN operator functionality.
 
     src/main/scala/nfn/service/Join
@@ -115,10 +107,6 @@ The following services, classes were added to the system in order to build up IN
 
     src/main/scala/nfn/service/QueryRandomRemNS
 
-* SetData: Set data on a node. This data is set on node filesystem to configure system files.
-
-    src/main/scala/nfn/service/SetData
-
 * UpdateNodeState: Update network state information on the compute server of a local or remote node.
 
     src/main/scala/nfn/service/UpdateNodeState
@@ -131,13 +119,71 @@ The following services, classes were added to the system in order to build up IN
 
     src/main/scala/runnable/production/ComputeServerStarter
 
+The following was changed in order to support producer initiated communication:
+
+# Additions to CCN-Lite
+We patched ccn-lite from the last release that supported NFN (ccn-lite 2.0.1) and have the latest master commits of https://github.com/cn-uofbasel/ccn-lite with the exception on some commits that mainly changed the data types.
+Our goal was to extend ccn-lite in order to additionally allow producer initiated communication therefore we added three new packet types:
+
+* Datastream Packet: A Packet that can initiate communication coming from a producer. The data is then send continuously to all consumers that have a pending interest in the data.
+* Add Persistent Interest Packet: A Packet that signals, that the Interest should be always satisfied if possible, much like a subscribe message in pub-sub systems.
+* Remove Persistent Interest Packet: A Packet that removes a persistent interest packet much like an unsubscribe message in a pub-sub system.
+
+With these additions we also enable producer initiated complex event processing as in the consumers add a query interest and the datastream packages initiate the computation of the complex event.
+
+This was achieved by making several extensions to ccn-lite:
+
+* Adding a sensor struct: A seperate struct with an own loop that constantly creates sensor readings as event tuples and sends them to a specified relay
+
+* Adding a sensor setting struct: A struct that holds the sensor information
+
+* Adding a sensor tuple struct: A buffer that contains the event tuples which are sent to the node they are connected to
+
+* Creating a utility library for packet dumping to constantly format the output of the packet
+
+* Altering the ccn-lite-fwd mechanism in order to handle datastream packets, add constant interest packets and remove constant interest packets
+
+Furhtermore we made changes to the linuxkernel Version of CCN-Lite in order to run it on the latest linux Kernel supported by Ubuntu 18.04 LTS which is at the time Kernel 5.3.0-40-generic. We also made extensions to integrate the capabilities to run NFN in the Kernel.
+
+In Detail:
+
+* src/ccnl-core/include/ccnl-interest.h: New struct ccnl_pendQ_s for pending query interests. Each interest can have a pending query interest that is executed whenever a data stream packet arrives that satisfies the interest packet. ccnl_query_append_pending a function that adds a pending query interest to an interest. ccnl_interest_dup a function that duplicates a given interest. Extendsion to the struct ccnl_interest_s with boolean variables isPersistent in order to indicate that the interest is persistent, isRemove in order to indicate that this interest removes other interests (is a remove persistent interest packet). A pointer to the fist pending Query of the pending queries for the interest. If null, there are no pending queries.
+
+* src/ccnl-core/include/ccnl-os-time.h: Change struct ccnl_timerlists_s to take a new struct legacy_timer_emu which is necessary for the ccn-lite kernel version since newer Kernel versions use this for timing. Function legacy_timer_emu_func that emulates a legacy timer for newer Kernel Versions > 4.15.0.
+
+* src/ccnl-core/include/ccnl-pkt-util.h: add functions ccnl_pkt_interest_isPersistent and ccnl_pkt_interest_isRemove in order to distinguish between the new packet types.
+
+* src/ccnl-core/include/ccnl-pkt.h: Change struct ccnl_pktdetail_ndntlv_s to add to boolean variables isPersistent and isRemovePersistent to differentiate between these packet types.
+
+* src/ccnl-core/include/ccnl-prefix.h: Change struct ccnl_prefix_s by defining CCNL_PREFIX_API to be the numb er 0x02 and CCNL_PREFIX_RQI to be the number 0x08.
+
+* src/ccnl-core/include/ccnl_relay.h: Add generic function DBL_LINKED_LIST_EMPLACE_BACK to place a list item at the back of a doubly linked list and not in the front. Add generic Function DBL_LINKED_LIST_REMOVE_FIRST to remove the first element of the given doubly linked list and not the last.
+
+* src/ccnl-core/src/ccnl-interest.c: Change ccnl_interest_new to also add the persistent and remove flag to the new interest. Add function ccnl_interest_dup, add function ccnl_query_append_pending
+
+* src/ccnl-core/src/time.c: Change ccnl_set_timer to conform with linux kernel versions > 4.15.0
+
+* src/ccnl-core/src/ccnl-relay.c: Change ccnl_serve_pending, ccnl_do_ageing to not remove a persistent interest.
+
+* src/ccnl-dump/include/ccn-lite-pktdump-util.h and src/ccnl-dump/src/ccn-lite-pktdump-util.c: Created a library for packet dumps.
+
+* src/ccnl-fwd/src/ccnl-fwd.c: Create function ccnl_content_serve_pendingQueries to serve the pending queries of an interest packet. Change function ccnl_fwd_handleContent to handle data stream packets and react accordingly by calling a pending query if it exists. Change function ccnl_handleInterest to react to a remove persistent interest packet to remove a persistent interest. Change ccnl_ndntlv_forwarder to react to the new packets.
+
+* src/ccnl-lnxkernel/ccn-lite-lnxkernel.c: Change includes to make them work again. Implement ccnl_open_ethdev, ccnl_open_udpdev, ccnl_realloc and ccnl_strdup. Add a Krivine Abstract machine struct to the kernel relay to enable NFN in the Kernel.
+
+* src/ccnl-nfn/src/ccnl-nfn-common.c: Implment function ccnl_nfn_local_interest_search to search for a local interest.
+
+* src/ccnl-nfn/src/ccnl-nfn-ops.c: Implement a function str_split that splits a string with a given delimiter. Implement a function createNewPacket that creates a new data packet with a given content. This is used to store the operator state. Implement function ccnl_makeQueryPersistent which appends a nfn query to a persistent interest packet for data. This way when a data stream packet arrives and the persistent interest matches, the nfn function is executed with the newest data. Implement function window_purge_old_data that takes the previous data state, the parameters for a window and the new tuple to add and deletes the data that should not be in the new window. Implement function op_builtin_window that is a builtin window operator.
+
+* src/ccnl-pkt/include/ccnl-pkt-builder.h and src/ccnl-pkt/src/ccnl-pkt-builder.c: Change function ccnl_mkSimpleInterest to accept the type of interest (normal, removePersistent and Persistent) and create the specific one accordingly. Implement ccnl_mkPersistentInterestObject to create a persistent interest.
+
+* src/ccnl-pkt/include/ccnl-pkt-ndntlv.h and src/ccnl-pkt/include/ccnl-pkt-ndntlv.c: add Packet type identifier for data stream packet, persistent interest and remove persistent interest. Implement function ccnl_ndntlv_prependPersistentInterest that prepends a persistent interest packet with the according identifier.
+
+* src/ccnl-sensor/\*: Structs and utilites that implement a sensor function.
+
+* src/ccnl-utils/\*: Utility functions to create a new sensor, shut it down, send a persistent interest and remove a persistent interest. Furthermore to make a data stream packet.
 
 
-## Additions to CCN-Lite for INetCEP
-In CCN-Lite, the major change was to manage the control interests. This was done in the ccnl_fwd_handleInterest and ccnl_fwd_handleContent methods of ccnl-core-fwd.c code file.
-Here, instead of saving the interest data in the content store, we skipped this process to reduce content store overload from control messages.
-
-    /ccn-lite/src/ccnl-core-fwd.c
 
 ## Services 
 The services that were created for the system are:
