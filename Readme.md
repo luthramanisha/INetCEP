@@ -10,6 +10,9 @@ INetCEP is a research project that enables in-network processing of CEP operator
 + *CEP Query Engine* that parses, places and executes the queries in the data plane of ICN. 
 	+ concurrent execution of queries and query reuse 
 	+ centralized and decentralized operator placement algorithms
+	
+To run INetCCEP simply do `bash publishRemotely.sh all <query> 1 Centralized scala <time_in_seconds> 1200`
+Here, `12000` indicates the time in seconds for emulation, in this example 20 minutes. 
 
 [Getting Started](#getting-started)
 
